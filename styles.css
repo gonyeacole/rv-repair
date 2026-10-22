@@ -131,7 +131,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .cta-band h2{font-size:2.1rem;font-weight:800}
 
 /* area + faq */
-.area-3{display:grid;grid-template-columns:.9fr 1.1fr 1fr;gap:36px;align-items:center}
+.area-3{display:grid;grid-template-columns:.8fr 1.25fr 1fr;gap:32px;align-items:center}
 .area-3>*{min-width:0}
 .area-3 .title.left{font-size:clamp(1.6rem,2.4vw,2.1rem)}
 .area-3 .faq .title{margin-bottom:12px}
@@ -163,7 +163,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
   .menu.open{display:flex;justify-content:flex-start}
   .burger{display:block}
   .nav-cta .btn-outline{display:none}
-  .hero-grid,.pricing-grid,.who,.area-3{display:grid;grid-template-columns:.9fr 1.1fr 1fr;gap:36px;align-items:center}
+  .hero-grid,.pricing-grid,.who,.area-3{display:grid;grid-template-columns:.8fr 1.25fr 1fr;gap:32px;align-items:center}
 .area-3>*{min-width:0}
 .area-3 .title.left{font-size:clamp(1.6rem,2.4vw,2.1rem)}
 .area-3 .faq .title{margin-bottom:12px}
