@@ -208,3 +208,4 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .pc-row strong{font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
 @media(max-width:980px){.pricing-cols{grid-template-columns:1fr}}
 @media(max-width:560px){.pc-top,.pc-rows{padding-left:20px;padding-right:20px}.pc-row strong{font-size:1.4rem}}
+.ico-phone{flex:none}
