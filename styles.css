@@ -1,6 +1,6 @@
 :root{
   --ink:#141414; --forest:#141414; --forest-d:#0a0a0a; --orange:#f7be1b; --orange-d:#946a00; --orange-h:#e0a800;
-  --bg:#f6f6f4; --card:#fff; --muted:#5c5c58; --line:#e2e2de; --radius:14px;
+  --bg:#f6f6f4; --card:#fff; --muted:#141414; --line:#e2e2de; --radius:14px;
   --shadow:0 8px 28px rgba(15,29,28,.12);
 }
 *{box-sizing:border-box;margin:0}
@@ -66,7 +66,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .stats-grid>div{display:flex;align-items:center;gap:12px}
 .ico{width:48px;height:48px;border-radius:12px;background:rgba(20,20,20,.08);display:grid;place-items:center;color:#141414}
 .stats strong{display:block;font-size:1.05rem;line-height:1.2}
-.stats small{color:rgba(20,20,20,.72);font-size:.8rem}
+.stats small{color:#141414;font-size:.8rem}
 
 /* sections */
 .section{padding:76px 0}
@@ -178,3 +178,5 @@ html,body{overflow-x:hidden}
 
 address{font-style:normal;font-size:.9rem;line-height:1.5}
 .hero h1 span{display:block}
+
+::placeholder{color:#141414;opacity:.7}
