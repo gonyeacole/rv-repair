@@ -68,12 +68,10 @@ form.addEventListener("submit", (e) => {
   };
   const input = document.getElementById("town-in");
   const res = document.getElementById("town-res");
-  const list = document.getElementById("town-list");
   if (!input || !res) return;
   const towns = [];
   Object.keys(COUNTIES).forEach((c) => COUNTIES[c].forEach((t) => towns.push({ town: t, county: c })));
   towns.sort((a, b) => a.town.localeCompare(b.town));
-  towns.forEach((t) => { const o = document.createElement("option"); o.value = t.town; list.appendChild(o); });
   const norm = (s) => s.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim();
   const base = "Type a town to check. Not listed? Call or text us, we may still come to you.";
   function check() {
