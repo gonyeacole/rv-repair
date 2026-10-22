@@ -1,7 +1,7 @@
 // Edit these once the real contact details exist.
 const CONFIG = {
-  phoneDisplay: "(000) 000-0000",
-  phoneHref: "+10000000000",
+  phoneDisplay: "(715) 308-1833",
+  phoneHref: "+17153081833",
   email: "info@example.com",
 };
 
