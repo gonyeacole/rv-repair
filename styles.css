@@ -175,3 +175,6 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 /* overflow guards */
 html,body{overflow-x:hidden}
 .hero-grid>*,.pricing-grid>*,.who>*,.area-grid>*,.cards>*{min-width:0}
+
+address{font-style:normal;font-size:.9rem;line-height:1.5}
+.hero h1 span{display:block}
