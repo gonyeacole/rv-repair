@@ -61,12 +61,12 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .fine{font-size:.76rem;color:var(--muted);text-align:center}.fine.dark{text-align:left;margin-top:14px}
 
 /* stats */
-.stats{background:#fff;border-bottom:1px solid var(--line)}
+.stats{background:var(--orange);color:#141414}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
 .stats-grid>div{display:flex;align-items:center;gap:12px}
-.ico{font-size:1.6rem;width:48px;height:48px;border-radius:12px;background:#fff6d6;display:grid;place-items:center}
+.ico{width:48px;height:48px;border-radius:12px;background:rgba(20,20,20,.08);display:grid;place-items:center;color:#141414}
 .stats strong{display:block;font-size:1.05rem;line-height:1.2}
-.stats small{color:var(--muted);font-size:.8rem}
+.stats small{color:rgba(20,20,20,.72);font-size:.8rem}
 
 /* sections */
 .section{padding:76px 0}
