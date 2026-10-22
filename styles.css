@@ -253,3 +253,12 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .area .faq details{background:#1f1f1f;border-color:#333;color:#fff}
 .area .faq summary::after{color:var(--orange)}
 .area .faq details p{color:#e4e4e0}
+
+/* faq: light section below the black service area */
+.faq-section{background:var(--bg)}
+.faq-section .faq{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;align-items:start}
+.faq-section .faq>.eyebrow,.faq-section .faq>.title{grid-column:1/-1;text-align:left}
+.faq-section .faq>.title{margin-bottom:6px}
+.faq-section .faq details{margin-top:0}
+@media(max-width:980px){.faq-section .faq{grid-template-columns:1fr}}
+.area .service-map{box-shadow:0 14px 40px rgba(0,0,0,.55)}
