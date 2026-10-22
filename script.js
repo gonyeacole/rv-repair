@@ -47,3 +47,47 @@ form.addEventListener("submit", (e) => {
   msg.className = "form-msg ok";
 });
 
+
+// Town checker: towns grouped by the 14 counties served. Not every town is listed.
+(function () {
+  const COUNTIES = {
+    "Dunn": ["Menomonie", "Colfax", "Boyceville", "Elk Mound", "Downing", "Knapp", "Ridgeland", "Wheeler", "Sand Creek"],
+    "Eau Claire": ["Eau Claire", "Altoona", "Augusta", "Fall Creek", "Fairchild", "Eleva Junction"],
+    "Chippewa": ["Chippewa Falls", "Lake Hallie", "Bloomer", "Cadott", "Stanley", "Cornell", "Boyd", "New Auburn", "Jim Falls", "Holcombe"],
+    "Barron": ["Barron", "Rice Lake", "Cumberland", "Chetek", "Turtle Lake", "Cameron", "Prairie Farm", "Almena", "Dallas", "Haugen"],
+    "Polk": ["Balsam Lake", "Amery", "Osceola", "St. Croix Falls", "Luck", "Frederic", "Clear Lake", "Centuria", "Dresser", "Milltown", "Star Prairie"],
+    "St. Croix": ["Hudson", "New Richmond", "Baldwin", "Hammond", "Glenwood City", "Roberts", "Somerset", "Woodville", "Deer Park"],
+    "Pierce": ["River Falls", "Ellsworth", "Prescott", "Spring Valley", "Plum City", "Elmwood", "Bay City", "Maiden Rock"],
+    "Pepin": ["Durand", "Pepin", "Arkansaw", "Stockholm"],
+    "Buffalo": ["Mondovi", "Alma", "Fountain City", "Cochrane", "Gilmanton", "Nelson"],
+    "Trempealeau": ["Arcadia", "Whitehall", "Blair", "Independence", "Galesville", "Trempealeau", "Osseo", "Eleva", "Strum"],
+    "Clark": ["Neillsville", "Thorp", "Greenwood", "Abbotsford", "Colby", "Loyal", "Owen", "Withee", "Dorchester"],
+    "Jackson": ["Black River Falls", "Hixton", "Merrillan", "Alma Center", "Taylor", "Melrose", "Northfield"],
+    "La Crosse": ["La Crosse", "Onalaska", "Holmen", "West Salem", "Bangor", "Mindoro"],
+    "Rusk": ["Ladysmith", "Bruce", "Hawkins", "Tony", "Weyerhaeuser", "Sheldon", "Glen Flora", "Exeland", "Conrath", "Ingram"],
+  };
+  const input = document.getElementById("town-in");
+  const res = document.getElementById("town-res");
+  const list = document.getElementById("town-list");
+  if (!input || !res) return;
+  const towns = [];
+  Object.keys(COUNTIES).forEach((c) => COUNTIES[c].forEach((t) => towns.push({ town: t, county: c })));
+  towns.sort((a, b) => a.town.localeCompare(b.town));
+  towns.forEach((t) => { const o = document.createElement("option"); o.value = t.town; list.appendChild(o); });
+  const norm = (s) => s.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim();
+  const base = "Type a town to check. Not listed? Call or text us, we may still come to you.";
+  function check() {
+    const q = norm(input.value);
+    res.className = "tc-res";
+    if (!q) { res.textContent = base; return; }
+    const exact = towns.find((t) => norm(t.town) === q);
+    const county = Object.keys(COUNTIES).find((c) => norm(c) === q || norm(c + " county") === q);
+    const part = towns.filter((t) => norm(t.town).startsWith(q));
+    if (exact) { res.className = "tc-res yes"; res.textContent = "Yes, we serve " + exact.town + " (" + exact.county + " County)."; }
+    else if (county) { res.className = "tc-res yes"; res.textContent = "Yes, we serve " + county + " County."; }
+    else if (part.length === 1 && q.length >= 3) { res.className = "tc-res yes"; res.textContent = "Yes, we serve " + part[0].town + " (" + part[0].county + " County)."; }
+    else if (part.length > 1) { res.textContent = "Keep typing, or pick a town from the list."; }
+    else { res.className = "tc-res maybe"; res.textContent = "We don't have that town listed. Call or text us at " + CONFIG.phoneDisplay + ", we may still come to you."; }
+  }
+  input.addEventListener("input", check);
+})();
