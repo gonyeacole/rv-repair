@@ -191,3 +191,16 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .faq-section .eyebrow{text-align:left}
 .area-copy .btn{margin-top:24px}
 .map-note{text-align:right}
+
+/* pricing split */
+.price-split{display:grid;grid-template-columns:.9fr 1.1fr;border-radius:16px;overflow:hidden;margin-top:24px}
+.ps-l{background:var(--orange);color:#141414;padding:36px;display:grid;gap:6px;align-content:center}
+.ps-lab{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.ps-big{font-weight:800;letter-spacing:-.03em;line-height:1}
+.ps-l .ps-big{font-size:clamp(4rem,9vw,6rem)}
+.ps-sub{font-weight:600}
+.ps-r{background:#1c1c1c;padding:36px;display:grid;gap:20px;align-content:center}
+.ps-rate{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ps-rate .ps-big{font-size:2.4rem;color:var(--orange)}
+.ps-r .eyebrow{margin-bottom:6px}
+@media(max-width:760px){.price-split{grid-template-columns:1fr}.ps-l,.ps-r{padding:28px 20px}}
