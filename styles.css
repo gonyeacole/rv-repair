@@ -265,10 +265,10 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 
 /* pricing: visit steps */
 .pc-steps{display:grid}
-.pc-it{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.pc-it{display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14)}
 .pc-it:first-child{padding-top:0}.pc-it:last-child{border-bottom:0;padding-bottom:0}
-.pc-dot{width:44px;height:44px;border-radius:50%;background:var(--orange);color:#141414;display:grid;place-items:center;font-weight:800}
-.pc-it b{display:block;font-weight:700}
+.pc-dot{width:52px;height:52px;font-size:1.2rem;border-radius:50%;background:var(--orange);color:#141414;display:grid;place-items:center;font-weight:800}
+.pc-it b{display:block;font-weight:700;font-size:1.6rem;letter-spacing:-.02em;line-height:1.1}
 .pc-it small{font-size:.85rem;color:#d7d7d2}
-.pc-amt{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--orange)}
-.pc-amt.pc-sm{font-size:1.2rem}
+.pc-amt{font-size:2.4rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--orange)}
+.pc-amt.pc-sm{font-size:1.5rem}
