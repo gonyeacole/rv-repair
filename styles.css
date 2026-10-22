@@ -228,7 +228,7 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .area-copy{display:flex;flex-direction:column;align-items:flex-start}
 .area-copy .btn{margin-top:auto}
 .area-copy p:not(.eyebrow){margin-bottom:22px}
-.area-3 .map-wrap{display:block}
-.area-3 .service-map{width:100%;height:100%;object-fit:cover}
+.area-3 .map-wrap{display:block;position:relative;min-height:380px}
+.area-3 .service-map{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .area-3 .faq .eyebrow,.area-3 .area-copy .eyebrow{margin-top:0}
-@media(max-width:980px){.area-3 .service-map{height:auto}}
+@media(max-width:980px){.area-3 .map-wrap{min-height:0}.area-3 .service-map{position:static;height:auto}}
