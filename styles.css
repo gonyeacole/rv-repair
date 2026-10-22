@@ -36,9 +36,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .burger span{display:block;width:24px;height:2px;background:var(--forest);margin:5px 0}
 
 /* hero */
-.hero{background:
-  radial-gradient(900px 400px at 80% 10%,rgba(247,190,27,.20),transparent 60%),
-  linear-gradient(135deg,var(--forest-d),var(--forest));
+.hero{background:#0f0f0f;
   color:#fff;padding:40px 0 64px;position:relative;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:1}
 .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-d);margin-bottom:10px}
