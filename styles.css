@@ -131,7 +131,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .cta-band h2{font-size:2.1rem;font-weight:800}
 
 /* area + faq */
-.area-3{display:grid;grid-template-columns:.8fr 1.25fr 1fr;gap:32px;align-items:stretch}
+.area-3{display:grid;grid-template-columns:1fr minmax(380px,470px);gap:48px;align-items:center}
 .area-3>*{min-width:0}
 .area-3 .title.left{font-size:clamp(1.6rem,2.4vw,2.1rem)}
 .area-3 .faq .title{margin-bottom:12px}
@@ -232,3 +232,13 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .area-3 .service-map{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .area-3 .faq .eyebrow,.area-3 .area-copy .eyebrow{margin-top:0}
 @media(max-width:980px){.area-3 .map-wrap{min-height:0}.area-3 .service-map{position:static;height:auto}}
+
+/* service area: map beside copy, FAQ underneath */
+.area-3 .map-wrap{min-height:0}
+.area-3 .service-map{position:static;height:auto;object-fit:initial}
+.area-copy .btn{margin-top:22px}
+.area-3 .faq{grid-column:1/-1;margin-top:18px;padding-top:34px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;align-items:start}
+.area-3 .faq>.eyebrow,.area-3 .faq>.title{grid-column:1/-1}
+.area-3 .faq>.title{margin-bottom:6px}
+.area-3 .faq details{margin-top:0}
+@media(max-width:980px){.area-3{grid-template-columns:1fr}.area-3 .faq{grid-template-columns:1fr}.area-3 .map-wrap{max-width:520px;margin:0 auto;width:100%}}
