@@ -262,3 +262,10 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .faq-section .faq details{margin-top:0}
 @media(max-width:980px){.faq-section .faq{grid-template-columns:1fr}}
 .area .service-map{box-shadow:0 14px 40px rgba(0,0,0,.55)}
+
+/* pricing: giant number, no card */
+.pc-big .pc-num{font-size:clamp(4.5rem,10vw,7rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--orange);margin-top:6px}
+.pc-sub{font-weight:600;margin-top:10px;font-size:1.05rem}
+.pc-lines{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:grid;gap:12px}
+.pc-lines div{display:flex;justify-content:space-between;gap:16px;font-size:1.05rem}
+.pc-lines b{font-weight:800;color:var(--orange)}
