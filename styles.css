@@ -314,3 +314,12 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
   .call-mini+.burger,.burger{margin-left:auto}
 }
 @media(max-width:360px){.pc-it b{font-size:1.05rem}.pc-amt{font-size:1.5rem}}
+
+@media(max-width:560px){
+  .stats-grid{grid-template-columns:1fr;gap:0;padding:6px 0}
+  .stat{grid-template-columns:36px 1fr;column-gap:14px;row-gap:2px;justify-items:start;text-align:left;align-items:center;padding:16px 0;border-bottom:1px solid rgba(20,20,20,.16)}
+  .stat:last-child{border-bottom:0}
+  .stat .i{grid-row:1 / span 2;width:32px;height:32px}
+  .stat b{font-size:1.2rem;line-height:1.15}
+  .stat span{font-size:.92rem;max-width:none}
+}
