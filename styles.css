@@ -21,7 +21,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 
 /* header */
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;gap:24px;height:84px}
+.nav{display:flex;align-items:center;gap:32px;height:84px}
 .brand{display:flex;align-items:center;gap:10px}
 .brand img{height:66px;width:auto}
 .brand-foot{background:#f6f6f4;border-radius:12px;padding:10px 14px;width:max-content}
@@ -29,8 +29,10 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 .brand-text{display:flex;flex-direction:column;line-height:1}
 .brand-text strong{font-size:1.7rem;font-weight:800;color:var(--forest);letter-spacing:-.02em}
 .brand-text small{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
-.menu{display:flex;gap:24px;margin-left:auto;font-weight:500;font-size:.92rem}
-.menu a:hover{color:var(--orange-d)}
+.menu{display:flex;flex:1;justify-content:center;gap:clamp(18px,2.8vw,40px);font-weight:600;font-size:.95rem}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--orange);transform:scaleX(0);transition:transform .15s}
+.menu a:hover::after{transform:scaleX(1)}
 .nav-cta{display:flex;gap:10px}
 .burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
 .burger span{display:block;width:24px;height:2px;background:var(--forest);margin:5px 0}
@@ -150,7 +152,7 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.025em}
 /* responsive */
 @media(max-width:980px){
   .menu{position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;gap:14px;border-bottom:1px solid var(--line);display:none;margin:0}
-  .menu.open{display:flex}
+  .menu.open{display:flex;justify-content:flex-start}
   .burger{display:block}
   .nav-cta .btn-outline{display:none}
   .hero-grid,.pricing-grid,.who,.area-grid{grid-template-columns:1fr}
