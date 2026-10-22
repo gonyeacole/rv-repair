@@ -242,3 +242,14 @@ address{font-style:normal;font-size:.9rem;line-height:1.5}
 .area-3 .faq>.title{margin-bottom:6px}
 .area-3 .faq details{margin-top:0}
 @media(max-width:980px){.area-3{grid-template-columns:1fr}.area-3 .faq{grid-template-columns:1fr}.area-3 .map-wrap{max-width:520px;margin:0 auto;width:100%}}
+
+/* service area: black band */
+.area{background:linear-gradient(135deg,#1c1c1c,#0f0f0f);color:#fff}
+.area .eyebrow{color:var(--orange)}
+.area .title,.area .title.left{color:#fff}
+.area-copy p:not(.eyebrow){color:#e4e4e0}
+.area .service-map{box-shadow:0 14px 40px rgba(0,0,0,.55)}
+.area-3 .faq{border-top-color:rgba(255,255,255,.15)}
+.area .faq details{background:#1f1f1f;border-color:#333;color:#fff}
+.area .faq summary::after{color:var(--orange)}
+.area .faq details p{color:#e4e4e0}
