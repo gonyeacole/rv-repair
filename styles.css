@@ -628,3 +628,19 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
   .hd-quote{background:#d8202a;color:#fff;border:2px solid #d8202a}
 }
 @media(max-width:380px){.hd-call span{display:none}.hd-call{padding:11px 12px}.hd-quote{padding:11px 12px;font-size:.8rem}}
+
+/* hero check list: Montserrat, white checks, two per row */
+.badges li{display:flex;align-items:flex-start;gap:9px;font-family:var(--font-display);font-weight:700;font-size:.92rem;line-height:1.25;color:#fff}
+.badges li svg{flex:none;color:#fff;margin-top:1px}
+@media(max-width:560px){
+  .cards{grid-template-columns:1fr}
+  .badges{grid-template-columns:1fr 1fr;gap:12px 14px}
+  .badges li{font-size:.8rem;gap:7px}
+  .badges li svg{width:16px;height:16px}
+  /* bigger logo, buttons make room */
+  .hd-main .brand img{height:78px}
+  .hd-call span{display:none}
+  .hd-call{padding:11px 12px}
+  .hd-cta{gap:6px}
+  .hd-quote{padding:11px 12px;font-size:.8rem}
+}
