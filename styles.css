@@ -644,3 +644,9 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
   .hd-cta{gap:6px}
   .hd-quote{padding:11px 12px;font-size:.8rem}
 }
+
+/* hero takes the old menu blue; menu goes deep navy */
+.hero{background:#29388f}
+.menu,.menu .menu-toggle{background:#0f1642}
+.menu a:hover,.menu a:active{border-bottom-color:#ed1c24}
+@media(max-width:980px){.menu .menu-in{background:#161e57}}
