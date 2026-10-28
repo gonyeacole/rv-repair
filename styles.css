@@ -617,3 +617,14 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
 }
 
 @media(max-width:980px){.menu .menu-in{max-width:none;width:100%;margin:0;padding:0 22px 8px}}
+
+/* header call-to-action buttons on mobile */
+.hd-cta{display:none}
+@media(max-width:980px){
+  .call-mini{display:none}
+  .hd-cta{display:flex;gap:8px;align-items:center;margin-left:auto}
+  .hd-call,.hd-quote{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--font-display);font-weight:800;font-size:.85rem;border-radius:10px;padding:11px 14px;min-height:44px;white-space:nowrap}
+  .hd-call{border:2px solid #1b2566;color:#1b2566;background:#fff}
+  .hd-quote{background:#d8202a;color:#fff;border:2px solid #d8202a}
+}
+@media(max-width:380px){.hd-call span{display:none}.hd-call{padding:11px 12px}.hd-quote{padding:11px 12px;font-size:.8rem}}
