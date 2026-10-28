@@ -89,3 +89,13 @@ form.addEventListener("submit", (e) => {
   }
   input.addEventListener("input", check);
 })();
+
+// Mobile menu toggle (bar under the header)
+(function () {
+  const nav = document.getElementById("menu");
+  const btn = nav && nav.querySelector(".menu-toggle");
+  if (!btn) return;
+  const set = (open) => { nav.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open)); };
+  btn.addEventListener("click", () => set(!nav.classList.contains("open")));
+  nav.addEventListener("click", (e) => { if (e.target.closest(".menu-in a")) set(false); });
+})();
