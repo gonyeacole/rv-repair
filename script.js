@@ -2,7 +2,7 @@
 const CONFIG = {
   phoneDisplay: "(715) 308-1833",
   phoneHref: "+17153081833",
-  email: "info@example.com",
+  email: "ottercreekrvservice@gmail.com",
 };
 
 document.querySelectorAll("[data-phone]").forEach((a) => (a.href = "tel:" + CONFIG.phoneHref));

@@ -370,10 +370,10 @@ body{background:var(--bg)}
 .vs-new{background:var(--orange)}
 .vs-old{background:#131a4a}
 .tc-res.yes{background:#fff;color:#161b40}
-.eyebrow.light,.area .eyebrow,.hero h1 span,.hero .badges b,.pricing .eyebrow,.pc-amt,.pricing .checks li::before,.pc-copy .eyebrow{color:#ff7a82}
+.eyebrow.light,.area .eyebrow,.hero h1 span,.hero .badges b,.pricing .eyebrow,.pc-amt,.pricing .checks li::before,.pc-copy .eyebrow{color:#ed1c24}
 .pc-dot{background:var(--orange);color:#fff}
 .faq summary::after,.faq-section .faq summary::after{color:var(--orange)}
-.area .faq summary::after{color:#ff7a82}
+.area .faq summary::after{color:#ed1c24}
 .hero{background:linear-gradient(135deg,#131a4a,#1d2872)}
 .pricing{background:linear-gradient(135deg,#1d2872,#131a4a)}
 .area{background:linear-gradient(135deg,#1d2872,#131a4a)}
@@ -452,9 +452,9 @@ body{background:var(--bg)}
 .callstrip{background:#243589}
 .cs-in{padding-block:22px;gap:26px;flex-wrap:nowrap}
 .cs-list{gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:.01em}
-.cs-list li::before{content:"✓ ";color:#ff7a82;font-weight:900}
+.cs-list li::before{content:"✓ ";color:#ed1c24;font-weight:900}
 .cs-phone{gap:16px}
-.cs-phone small{color:#ff7a82;font-weight:800;font-size:1rem;line-height:1.1;text-align:center}
+.cs-phone small{color:#ed1c24;font-weight:800;font-size:1rem;line-height:1.1;text-align:center}
 .cs-phone a{font-size:2.9rem;color:#fff;letter-spacing:-.025em;line-height:1}
 .cs-or{position:relative;display:flex;align-items:center;gap:0;border:0;width:auto;height:auto;padding:0 6px}
 .cs-or b{width:48px;height:48px;border-radius:50%;border:3px solid #fff;display:grid;place-items:center;font-weight:800;font-size:.95rem;margin-inline:6px}
@@ -509,7 +509,7 @@ body{background:var(--bg)}
 .t3 small{display:block;font-size:.85rem;font-weight:700;opacity:.85}
 .t3 b{font-size:1.35rem;font-weight:800;letter-spacing:-.01em;line-height:1.15;white-space:nowrap}
 .t3-tr{list-style:none;display:flex;gap:26px;flex-wrap:wrap;justify-content:center;font-weight:600;color:#e2e6f6;padding:0}
-.t3-tr li::before{content:"✓ ";color:#ff7a82;font-weight:800}
+.t3-tr li::before{content:"✓ ";color:#ed1c24;font-weight:800}
 @media(max-width:860px){.t3{grid-template-columns:1fr}.t3-in{padding-block:18px}}
 
 /* phone strip: option A, centered number, yellow accents */
