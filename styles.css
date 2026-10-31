@@ -968,3 +968,15 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .svc-head .eyebrow{color:#946a00}
 .svc6 .s6{background:#f6f6f4;border:1px solid #e4e4de}
 .svc6 .s6-tx span{display:none}
+
+/* services spacing: tight tiles, small side margin */
+.svc6{padding:26px 0 30px}
+.svc6 .container{width:calc(100% - 20px)}
+.svc-head{gap:4px}
+.svc-head .title{font-size:1.75rem;line-height:1.15}
+.svc6-grid{gap:9px;padding:20px 0 0}
+.svc6 .s6{padding:0 18px;min-height:56px;gap:16px;border:0}
+.svc6 .s6-ic,.svc6 .s6-ic.c1,.svc6 .s6-ic.c2,.svc6 .s6-ic.c3,.svc6 .s6-ic.c4,.svc6 .s6-ic.c5,.svc6 .s6-ic.c6{width:26px;height:26px}
+.svc6 .s6-ic svg{width:26px;height:26px;stroke-width:1.7}
+.svc6 .s6-tx b{font-size:1.1rem;font-weight:500}
+@media(min-width:700px){.svc6 .container{width:min(1160px,100% - 32px)}.svc6-grid{gap:12px}.svc6 .s6{min-height:64px}}
