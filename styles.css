@@ -995,3 +995,11 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .hero-cta,.btn.btn-lg.hero-cta{display:inline-flex;width:auto;padding:12px 30px;font-size:1rem;line-height:1.5;border-radius:4px;justify-content:center}
 @media(max-width:700px){.hero-cta,.btn.btn-lg.hero-cta{display:inline-flex;width:auto}}
 .hero-cta,.btn.btn-lg.hero-cta,.qc-submit{height:50px;padding-block:0;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:0}
+
+/* hero photo */
+.hero{background:#0f0f0f url("assets/hero-camp-desktop.jpg") center 78%/cover no-repeat}
+.hero::after{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.5) 55%,rgba(0,0,0,.62))}
+@media(max-width:700px){
+  .hero{background-image:url("assets/hero-camp-mobile.jpg");background-position:50% 100%}
+  .hero::after{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.45) 60%,rgba(0,0,0,.35))}
+}
