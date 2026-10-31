@@ -962,3 +962,9 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .svc6 .s6-ic svg{width:40px;height:40px;stroke:#0f0f0f;stroke-width:1.6}
 .svc6 .s6-tx b{font-size:1.15rem;font-weight:600;color:#0f0f0f}
 .svc6 .s6-tx span{font-size:.92rem;color:#2a2a2a}
+
+/* services: white band under the contact form, names only */
+.svc6{background:#fff;padding:40px 0 44px}
+.svc-head .eyebrow{color:#946a00}
+.svc6 .s6{background:#f6f6f4;border:1px solid #e4e4de}
+.svc6 .s6-tx span{display:none}
