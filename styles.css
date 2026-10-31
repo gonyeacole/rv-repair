@@ -1003,3 +1003,19 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .hero{background-image:url("assets/hero-camp-mobile.jpg");background-position:50% 100%}
   .hero::after{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.45) 60%,rgba(0,0,0,.35))}
 }
+
+/* meet the owner */
+.owner{background:#f6f6f4;padding:34px 0 40px}
+.owner-in{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
+.owner-img{width:100%;height:auto;border-radius:6px;display:block;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%}
+.owner-copy{display:grid;gap:12px;justify-items:start}
+.owner-copy .eyebrow{margin:0;color:#946a00}
+.owner-copy .title{margin:0;text-align:left;color:#0f0f0f;font-size:clamp(1.8rem,4vw,2.4rem)}
+.owner-copy p:not(.eyebrow){font-size:1.05rem;color:#2a2a2a;max-width:56ch}
+.owner-btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;font-size:1rem;margin-top:6px}
+.owner .container{width:calc(100% - 32px)}
+@media(min-width:800px){
+  .owner{padding:56px 0}
+  .owner-in{grid-template-columns:.8fr 1.2fr;gap:48px}
+  .owner .container{width:min(1000px,100% - 32px)}
+}
