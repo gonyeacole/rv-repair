@@ -891,3 +891,6 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
   .tb-ghost{background:rgba(0,0,0,.35);border:2px solid #fff;color:#fff}
   .tb-ghost:hover{background:#fff;color:#0f0f0f}
 }
+
+/* Inter for everything except titles */
+.eyebrow,.btn,.menu a,.menu .menu-toggle,.util a,.sched,.hd-btn,.call-mini,.sb-call,.sb-text,.sb-quote,.trust>div,.callblock small,.sa-ph,.sa-ph a,.sa-ph small,.sa-btn .btn,.cs-btn,.num,.pc-dot,.pc-amt,.faq summary,.t3 b,.nav-cta .btn,.burger,.trustband li,.county-list,.tb-actions .btn,.sb-tr li,.sb-lab,.sb-num,.badges li,.hd-call,.hd-quote,.hd-quote small,.hd-call small,.em-strip,.promo b,.promo-r,.p-cta,.foot-grid h4,.footer h4,.quote-card .btn,.quote-card input,.quote-card select,.quote-card textarea,.wt span,.tc-res{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
