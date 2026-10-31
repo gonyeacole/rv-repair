@@ -1040,3 +1040,10 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .owner-copy{justify-items:start}
 }
 .section.steps .eyebrow,.section.steps .title{text-align:center}
+
+/* hero centered on phones */
+@media(max-width:700px){
+  .hero-copy{text-align:center}
+  .hero .lead{margin-inline:auto}
+  .hero-cta,.btn.btn-lg.hero-cta{margin-inline:auto;display:flex;width:fit-content}
+}
