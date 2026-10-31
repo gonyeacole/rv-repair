@@ -880,3 +880,14 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
 /* footer */
 .footer{background:#0f0f0f}
 .footer h4{color:#f6c119}
+
+
+/* phone: Call / Request a Quote buttons sit under the trust list */
+.tb-actions{display:none}
+@media(max-width:980px){
+  .hero-actions{display:none}
+  .tb-actions{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+  .tb-actions .btn{width:100%;justify-content:center}
+  .tb-ghost{background:rgba(0,0,0,.35);border:2px solid #fff;color:#fff}
+  .tb-ghost:hover{background:#fff;color:#0f0f0f}
+}
