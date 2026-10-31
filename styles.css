@@ -986,3 +986,7 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 
 /* hero headline in capitals */
 .hero h1{text-transform:uppercase;letter-spacing:.01em}
+
+/* hero button under the text */
+.hero-cta{margin-top:22px;display:inline-flex}
+@media(max-width:700px){.hero-cta{display:flex;width:100%;justify-content:center}.hero{padding-bottom:150px}}
