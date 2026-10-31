@@ -980,3 +980,6 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .svc6 .s6-ic svg{width:26px;height:26px;stroke-width:1.7}
 .svc6 .s6-tx b{font-size:1.1rem;font-weight:500}
 @media(min-width:700px){.svc6 .container{width:min(1160px,100% - 32px)}.svc6-grid{gap:12px}.svc6 .s6{min-height:64px}}
+
+/* hero headline: all white */
+.hero h1 span{color:#fff}
