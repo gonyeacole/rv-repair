@@ -530,7 +530,7 @@ body{background:var(--bg)}
 .sa-ph small{font-weight:800;color:#f6c119}
 
 /* Montserrat for headings, nav and buttons */
-:root{--font-display:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif}
+:root{--font-display:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-call,.sb-text,.sb-quote,.trust>div,.callblock small,.s6-tx b,.stat b,.card h3,.card a,.sa-ph,.sa-btn .btn,.cs-btn,.num,.pc-it b,.pc-amt,.wt b,.versus h3,.steps-grid h3,.quote-card h2,.faq summary,.foot-grid h4,.t3 b,.nav-cta .btn,.burger{font-family:var(--font-display)}
 h1,h2,h3,.title{letter-spacing:-.02em}
 .hero h1{font-size:clamp(2.2rem,4.4vw,3.3rem);line-height:1.08}
@@ -894,3 +894,6 @@ h1,h2,h3,h4,.title,.eyebrow,.btn,.menu a,.util a,.sched,.hd-btn,.call-mini,.sb-c
 
 /* Inter for everything except titles */
 .eyebrow,.btn,.menu a,.menu .menu-toggle,.util a,.sched,.hd-btn,.call-mini,.sb-call,.sb-text,.sb-quote,.trust>div,.callblock small,.sa-ph,.sa-ph a,.sa-ph small,.sa-btn .btn,.cs-btn,.num,.pc-dot,.pc-amt,.faq summary,.t3 b,.nav-cta .btn,.burger,.trustband li,.county-list,.tb-actions .btn,.sb-tr li,.sb-lab,.sb-num,.badges li,.hd-call,.hd-quote,.hd-quote small,.hd-call small,.em-strip,.promo b,.promo-r,.p-cta,.foot-grid h4,.footer h4,.quote-card .btn,.quote-card input,.quote-card select,.quote-card textarea,.wt span,.tc-res{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+
+/* Inter headings: slightly looser tracking */
+h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacing:-.005em}
