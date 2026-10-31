@@ -990,3 +990,8 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 /* hero button under the text */
 .hero-cta{margin-top:22px;display:inline-flex}
 @media(max-width:700px){.hero-cta{display:flex;width:100%;justify-content:center}.hero{padding-bottom:150px}}
+
+/* hero button: same size as Submit, natural width */
+.hero-cta,.btn.btn-lg.hero-cta{display:inline-flex;width:auto;padding:12px 30px;font-size:1rem;line-height:1.5;border-radius:4px;justify-content:center}
+@media(max-width:700px){.hero-cta,.btn.btn-lg.hero-cta{display:inline-flex;width:auto}}
+.hero-cta,.btn.btn-lg.hero-cta,.qc-submit{height:50px;padding-block:0;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:0}
