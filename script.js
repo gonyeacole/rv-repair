@@ -33,16 +33,16 @@ const msg = form.querySelector(".form-msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
-  if (!d.name || !d.phone || !d.location || !d.service) {
-    msg.textContent = "Please fill in your name, phone, location and the service needed.";
+  if (!d.first || !d.phone || !d.details) {
+    msg.textContent = "Please fill in your first name, phone and a short message.";
     msg.className = "form-msg err";
     return;
   }
+  const name = [d.first, d.last].filter(Boolean).join(" ");
   const body = [
-    `Name: ${d.name}`, `Phone: ${d.phone}`, `Email: ${d.email || "-"}`,
-    `RV location: ${d.location}`, `Service: ${d.service}`, "", d.details || "",
+    `Name: ${name}`, `Phone: ${d.phone}`, `Email: ${d.email || "-"}`, "", d.details,
   ].join("\n");
-  location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request: " + d.service)}&body=${encodeURIComponent(body)}`;
+  location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request from " + name)}&body=${encodeURIComponent(body)}`;
   msg.textContent = "Thanks! Your email app should open with your request. You can also call us.";
   msg.className = "form-msg ok";
 });

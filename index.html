@@ -288,26 +288,14 @@
       </div>
       <h2>Need an RV repaired?<br>Tell us what is going on.</h2>
       <p class="qc-sub">Fill out the form to request a free quote.</p>
-      <p class="qc-req">Fields marked with an * are required</p>
+      <p class="qc-sub">Fields marked with an * are required</p>
       <div class="qc-row">
-        <label><span class="sr">Full name</span><input name="name" type="text" placeholder="Full Name *" autocomplete="name" required></label>
-        <label><span class="sr">Phone</span><input name="phone" type="tel" placeholder="Phone *" autocomplete="tel" required></label>
+        <label><span class="sr">First name</span><input name="first" type="text" placeholder="First *" autocomplete="given-name" required></label>
+        <label><span class="sr">Last name</span><input name="last" type="text" placeholder="Last" autocomplete="family-name"></label>
       </div>
       <label><span class="sr">Email</span><input name="email" type="email" placeholder="Email" autocomplete="email"></label>
-      <label><span class="sr">RV location</span><input name="location" type="text" placeholder="Where is your RV? *" required></label>
-      <label><span class="sr">Service needed</span>
-        <select name="service" required>
-          <option value="">Service Needed *</option>
-          <option>Repair / Diagnostics</option>
-          <option>Seasonal Maintenance / Inspection</option>
-          <option>Appliance &amp; Electrical</option>
-          <option>Plumbing</option>
-          <option>Roof / Structural</option>
-          <option>Emergency / Roadside</option>
-          <option>Other</option>
-        </select>
-      </label>
-      <label><span class="sr">Message</span><textarea name="details" rows="4" placeholder="Message (make, model, symptoms)"></textarea></label>
+      <label><span class="sr">Phone</span><input name="phone" type="tel" placeholder="Phone *" autocomplete="tel" required></label>
+      <label><span class="sr">Message</span><textarea name="details" rows="4" placeholder="Message * (what is going on, and where is your RV?)" required></textarea></label>
       <p class="qc-fine">By clicking Submit, you agree to be contacted about your request. We never share your information.</p>
       <button class="qc-submit" type="submit">Submit</button>
       <p class="form-msg" role="status" aria-live="polite"></p>
