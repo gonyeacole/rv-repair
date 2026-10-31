@@ -1019,3 +1019,24 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .owner-in{grid-template-columns:.8fr 1.2fr;gap:48px}
   .owner .container{width:min(1000px,100% - 32px)}
 }
+
+/* section titles: centered label + heading, like Our Services */
+.section .eyebrow,.steps .eyebrow,.pricing .eyebrow,.who .eyebrow,.owner-copy .eyebrow,.areadark .eyebrow,.faq .eyebrow{font-size:1rem;letter-spacing:.04em;text-align:center}
+.steps .title,.pricing .title,.who-h,.owner-copy .title,.areadark .title,.faq .title,.section .title{font-weight:600;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;text-align:center}
+.steps .eyebrow,.steps .title,.areadark .eyebrow,.areadark .title,.faq .eyebrow,.faq .title{text-align:center}
+.area-in{justify-items:center;text-align:center}
+.area-sub{text-align:center;margin-inline:auto}
+.county-list{text-align:left}
+.faq-section .faq>.eyebrow,.faq-section .faq>.title{text-align:center}
+@media(max-width:799px){
+  .owner-copy{justify-items:center;text-align:center}
+  .owner-copy .title{text-align:center}
+  .pricing .pc-copy{text-align:center}
+  .pricing .pc-copy .checks{text-align:left;display:inline-block}
+  .who>div:first-child{text-align:center}
+}
+@media(min-width:800px){
+  .pricing .eyebrow,.pricing .title,.who .eyebrow,.who-h,.owner-copy .eyebrow,.owner-copy .title{text-align:left}
+  .owner-copy{justify-items:start}
+}
+.section.steps .eyebrow,.section.steps .title{text-align:center}
