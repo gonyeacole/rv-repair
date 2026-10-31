@@ -267,7 +267,7 @@
   <svg class="hero-scene" viewBox="0 0 1290 560" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
     <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f0f0f"/><stop offset="1" stop-color="#0f0f0f"/></linearGradient></defs>
     <rect width="1290" height="560" fill="url(#hg)"/>
-    <circle cx="1010" cy="150" r="60" fill="#e6e6e1" opacity=".5"/>
+    <circle cx="1010" cy="150" r="60" fill="#f6c119" opacity=".22"/>
     <g fill="#0a0a0a"><path d="M0 560 L60 250 L120 560z M100 560 L180 190 L260 560z M240 560 L310 280 L380 560z M880 560 L960 210 L1040 560z M1000 560 L1090 170 L1180 560z M1130 560 L1210 260 L1290 560z"/></g>
     <g transform="translate(640 300) scale(1)" fill="#050505"><path d="M8 84V30a10 10 0 0 1 10-10h160a12 12 0 0 1 12 12v8h28q14 0 22 12l14 22v10a8 8 0 0 1-8 8h-12a20 20 0 0 0-40 0H88a20 20 0 0 0-40 0H16a8 8 0 0 1-8-8z"/><circle cx="68" cy="92" r="12"/><circle cx="212" cy="92" r="12"/></g>
   </svg>
@@ -275,22 +275,29 @@
     <div class="hero-copy">
       <h1>RV Trouble? <span>We Come to You.</span></h1>
       <p class="lead">Diagnostics and repair at your campsite, driveway or storage lot. Call or text and we will get you on the schedule.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" href="tel:+17153081833" data-phone><svg class="ico-phone" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></svg> Call <span data-phone-text>(715) 308-1833</span></a>
-        <a class="btn btn-ghost btn-lg" href="#quote">Request a Quote</a>
-      </div>
     </div>
+  </div>
+</section>
 
+<section class="quotesec">
+  <div class="container">
     <form class="quote-card" id="quote" novalidate>
-      <h2>Get a Free Quote</h2>
-      <p class="sub">Fast. Easy. No obligation.</p>
-      <label><span class="sr">Full name</span><input name="name" type="text" placeholder="Full Name" autocomplete="name" required></label>
-      <label><span class="sr">Phone</span><input name="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required></label>
-      <label><span class="sr">Email</span><input name="email" type="email" placeholder="Email Address" autocomplete="email"></label>
-      <label><span class="sr">RV location</span><input name="location" type="text" placeholder="Where is your RV? (campground, city)" required></label>
+      <div class="qc-call">
+        <p class="qc-kicker">Call or text today for a free quote</p>
+        <a class="qc-phone" href="tel:+17153081833" data-phone><span data-phone-text>(715) 308-1833</span></a>
+      </div>
+      <h2>Need an RV repaired?<br>Tell us what is going on.</h2>
+      <p class="qc-sub">Fill out the form to request a free quote.</p>
+      <p class="qc-req">Fields marked with an * are required</p>
+      <div class="qc-row">
+        <label><span class="sr">Full name</span><input name="name" type="text" placeholder="Full Name *" autocomplete="name" required></label>
+        <label><span class="sr">Phone</span><input name="phone" type="tel" placeholder="Phone *" autocomplete="tel" required></label>
+      </div>
+      <label><span class="sr">Email</span><input name="email" type="email" placeholder="Email" autocomplete="email"></label>
+      <label><span class="sr">RV location</span><input name="location" type="text" placeholder="Where is your RV? *" required></label>
       <label><span class="sr">Service needed</span>
         <select name="service" required>
-          <option value="">Service Needed</option>
+          <option value="">Service Needed *</option>
           <option>Repair / Diagnostics</option>
           <option>Seasonal Maintenance / Inspection</option>
           <option>Appliance &amp; Electrical</option>
@@ -300,14 +307,13 @@
           <option>Other</option>
         </select>
       </label>
-      <label><span class="sr">Details</span><textarea name="details" rows="3" placeholder="Tell us what's going on (make, model, symptoms)"></textarea></label>
-      <button class="btn btn-primary btn-block" type="submit">Get My Quote →</button>
+      <label><span class="sr">Message</span><textarea name="details" rows="4" placeholder="Message (make, model, symptoms)"></textarea></label>
+      <p class="qc-fine">By clicking Submit, you agree to be contacted about your request. We never share your information.</p>
+      <button class="qc-submit" type="submit">Submit</button>
       <p class="form-msg" role="status" aria-live="polite"></p>
-      <p class="fine"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Private. We never share your information.</p>
     </form>
   </div>
 </section>
-
 <section class="trustband" id="why">
   <div class="container">
     <ul>
