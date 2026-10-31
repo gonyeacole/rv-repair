@@ -1056,3 +1056,7 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .steps-grid li .num{grid-row:auto}
   .steps-grid p{max-width:34ch;margin-inline:auto}
 }
+
+/* How it works: button below the steps */
+.steps-cta{display:flex;justify-content:center;margin-top:34px}
+.steps-cta .btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;justify-content:center;font-size:1rem}
