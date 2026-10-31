@@ -948,3 +948,17 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .quotesec .container{width:100%;max-width:none}
   .quotesec .quote-card{border-radius:0;padding:22px 24px 30px}
 }
+
+/* ===== Services: yellow section with tiles ===== */
+.svc6{background:linear-gradient(#f6c119,#e8b216);padding:40px 0 44px}
+.svc-head{padding-top:0;justify-items:center;text-align:center;gap:6px}
+.svc-head .eyebrow{text-align:center;color:#6b4a00;font-size:1rem;letter-spacing:.04em}
+.svc-head .title{text-align:center;color:#0f0f0f;font-weight:600;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;max-width:22ch}
+.svc6-grid{display:grid;grid-template-columns:1fr;gap:14px;padding:26px 0 0}
+@media(min-width:700px){.svc6-grid{grid-template-columns:1fr 1fr;gap:16px}}
+@media(min-width:1000px){.svc6-grid{grid-template-columns:repeat(3,1fr)}}
+.svc6 .s6{background:#fbe08c;border:0;border-radius:0;padding:22px 18px;gap:18px;align-items:center;display:flex}
+.svc6 .s6-ic,.svc6 .s6-ic.c1,.svc6 .s6-ic.c2,.svc6 .s6-ic.c3,.svc6 .s6-ic.c4,.svc6 .s6-ic.c5,.svc6 .s6-ic.c6{background:transparent;width:44px;height:44px;border-radius:0;flex:none}
+.svc6 .s6-ic svg{width:40px;height:40px;stroke:#0f0f0f;stroke-width:1.6}
+.svc6 .s6-tx b{font-size:1.15rem;font-weight:600;color:#0f0f0f}
+.svc6 .s6-tx span{font-size:.92rem;color:#2a2a2a}
