@@ -1456,3 +1456,6 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .svc6 .s6,.ps-row,.ac,.faq-section .faq details,.area-map,.owner-img,.s6-more{border-radius:var(--r)}
 .svc6 details.s6{overflow:hidden}
 .ps-row{border-radius:var(--r)}
+
+.ac-head{margin-bottom:56px}
+.ac-head .title{margin-bottom:0!important}
