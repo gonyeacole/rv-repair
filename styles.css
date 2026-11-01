@@ -1294,3 +1294,13 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 @supports (overflow:clip){html,body{overflow-x:clip}}
 .a11y-body{position:relative;z-index:1}
 .a11y-head{padding-bottom:84px}
+
+/* SEO text section */
+.seo-text{background:#fff;padding:26px 0 30px}
+.seo-in{width:calc(100% - 30px);max-width:760px;display:grid;gap:0}
+.seo-in .eyebrow{margin:0 0 4px;text-align:center;font-size:1rem;letter-spacing:.04em;color:#946a00}
+.seo-in .title{margin:0 0 18px;text-align:center;color:#0f0f0f;font-size:1.75rem;line-height:1.15;font-weight:600}
+.seo-in h3{margin:18px 0 6px;font-size:1.2rem;font-weight:700;color:#0f0f0f;line-height:1.25}
+.seo-in p{margin:0;font-size:1.05rem;line-height:1.6;color:#2a2a2a}
+.seo-in p a{color:#946a00;font-weight:700;text-decoration:underline}
+@media(min-width:700px){.seo-text{padding:44px 0 52px}.seo-in .title{font-size:clamp(1.9rem,3vw,2.4rem)}}
