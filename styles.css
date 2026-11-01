@@ -1367,3 +1367,29 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 @media(min-width:760px){.ac-grid{max-width:1000px;grid-template-columns:1fr 1fr;gap:68px 24px}.actcards{padding:80px 0 56px}}
 .ac{align-content:start}
 @media(min-width:760px){.ac:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 12px)}}
+
+/* Services as expandable tiles */
+.svc6-grid{align-items:start}
+.svc6 details.s6{display:block;background:#f6f6f4;padding:0;min-height:0;border:0}
+.s6-sum{list-style:none;display:flex;align-items:center;gap:16px;min-height:56px;padding:0 18px;cursor:pointer}
+.s6-sum::-webkit-details-marker{display:none}
+.s6-sum .s6-tx{flex:1}
+.s6-chev{flex:none;width:10px;height:10px;border-right:3px solid #0f0f0f;border-bottom:3px solid #0f0f0f;transform:rotate(45deg);margin:-4px 4px 0 0}
+details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
+.s6-more{padding:2px 18px 22px 18px;display:grid;gap:10px;border-top:1px solid #e4e4de;margin:0 0 0;padding-top:14px}
+.s6-more p{margin:0;font-size:1rem;line-height:1.6;color:#2a2a2a}
+.s6-more ul{margin:0;padding-left:20px;display:grid;gap:4px}
+.s6-more li{font-size:1rem;line-height:1.5;color:#2a2a2a}
+.s6-btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;justify-self:start;font-size:1rem;margin-top:6px}
+.s6-sum:focus-visible{outline:3px solid #0f0f0f;outline-offset:-3px}
+
+/* Action cards: smaller */
+.actcards{padding:48px 0 28px;margin-top:14px}
+.ac-grid{gap:50px}
+.ac{padding:46px 18px 22px;gap:8px}
+.ac-ic{top:-34px;width:68px;height:68px}
+.ac-ic svg{width:30px;height:30px}
+.ac h3{font-size:1.25rem}
+.ac p{font-size:.98rem;line-height:1.5}
+.ac-btn{margin-top:4px}
+@media(min-width:760px){.actcards{padding:60px 0 36px}.ac-grid{gap:50px 20px}}
