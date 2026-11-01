@@ -403,6 +403,31 @@
       <div class="pc-it"><div class="pc-dot">3</div><div><b>Parts and Materials</b></div><span class="pc-amt pc-sm">Varies by Job</span></div>
     </div>
   </div>
+  <div class="container est" id="estimate">
+    <div class="est-card">
+      <p class="eyebrow">Instant estimate</p>
+      <h3 class="est-title">How much will my visit cost?</h3>
+      <p class="est-sub">Choose your service and enter where your RV is parked. We measure the drive from Otter Creek, WI and show a typical price range.</p>
+      <form class="est-form" id="est-form" novalidate>
+        <label class="est-l" for="est-service">1. What do you need?</label>
+        <select id="est-service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="repair">Repair &amp; Diagnostics</option>
+          <option value="electrical">Appliance &amp; Electrical</option>
+          <option value="plumbing">Plumbing</option>
+          <option value="roof">Roof &amp; Structural</option>
+          <option value="seasonal">Seasonal Maintenance</option>
+          <option value="emergency">Emergency Help</option>
+        </select>
+        <label class="est-l" for="est-address">2. Where is your RV?</label>
+        <input id="est-address" name="address" type="text" placeholder="Street, city, state (or just city, state)" autocomplete="street-address" required>
+        <button class="est-go" type="submit">Get my estimate</button>
+        <p class="est-priv">Your address is only used to measure the drive and is not saved.</p>
+      </form>
+      <div class="est-out" id="est-out" role="status" aria-live="polite" hidden></div>
+    </div>
+  </div>
+
 </section>
 
 <section class="section" id="who">
