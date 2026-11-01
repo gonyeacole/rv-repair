@@ -1325,3 +1325,7 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 .slant-btn{display:inline-flex;align-items:center;gap:12px;margin-top:24px;padding:0 34px;height:62px;background:#f6c119;color:#0f0f0f;font-weight:800;font-size:1.3rem;clip-path:polygon(4% 0,100% 0,96% 100%,0 100%)}
 .slant-btn:hover{background:#d9a516}
 @media(min-width:700px){.callexp{padding:48px 0 20px}.callexp-in .title{font-size:clamp(2.2rem,3.6vw,2.8rem)}}
+
+/* Call on the experts button: same as the other site buttons */
+.slant-btn{clip-path:none;height:50px;padding:0 30px;border-radius:4px;font-size:1rem;font-weight:700;gap:10px;margin-top:22px}
+.slant-btn svg{width:20px;height:20px}
