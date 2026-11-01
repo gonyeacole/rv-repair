@@ -1425,3 +1425,34 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 /* flow preview: services directly under the experts intro */
 .callexp{padding-bottom:6px}
 .svc6{padding-top:6px}
+
+/* ===== Flow v2: one rhythm for every section ===== */
+:root{--sec-y:44px;--r:6px}
+.callexp,.svc6,.section.steps,.pricing,.owner,.actcards,.seo-text,.areadark,.section.faq-section{padding-block:var(--sec-y)!important;margin-top:0!important}
+@media(min-width:700px){:root{--sec-y:64px}}
+/* the card icons overlap upward, so that section needs room above its first card */
+.actcards{padding-top:calc(var(--sec-y) + 34px)!important}
+/* titles: same block everywhere */
+:is(.callexp,.svc6,.steps,.pricing,.owner,.actcards,.seo-text,.areadark,.faq-section) .eyebrow{display:block;margin:0 0 4px!important;font-size:1rem;letter-spacing:.04em;text-align:center;color:#946a00;font-weight:800;text-transform:uppercase}
+:is(.callexp,.svc6,.steps,.pricing,.owner,.actcards,.seo-text,.areadark,.faq-section) .title{margin:0 0 22px!important;font-size:1.75rem;line-height:1.15;font-weight:600;letter-spacing:0;text-align:center}
+@media(min-width:700px){:is(.callexp,.svc6,.steps,.pricing,.owner,.actcards,.seo-text,.areadark,.faq-section) .title{font-size:2.2rem}}
+.callexp .eyebrow,.callexp .title,.seo-text .eyebrow,.seo-text .title{text-align:center}
+.seo-bar{display:none}
+.callexp-in,.seo-in,.ac-head{justify-items:center;text-align:center}
+.ac-head{width:calc(100% - 30px);max-width:760px;margin-inline:auto;display:grid}
+.callexp-in p,.seo-in p{text-align:center}
+.callexp-in{max-width:720px}
+/* eyebrow colors by background */
+.steps .eyebrow,.owner .eyebrow,.areadark .eyebrow{color:#f6c119}
+.steps .title,.owner .title,.areadark .title{color:#fff}
+.pricing .eyebrow,.actcards .eyebrow{color:#6b4a00}
+.pricing .title,.actcards .title{color:#0f0f0f}
+/* owner heading block */
+.owner-head{display:grid;gap:0;justify-items:center}
+.owner-in{gap:0;grid-template-areas:"head" "img" "copy"}
+.owner-head .title{margin-bottom:22px!important}
+.owner-copy{margin-top:22px}
+/* one tile shape */
+.svc6 .s6,.ps-row,.ac,.faq-section .faq details,.area-map,.owner-img,.s6-more{border-radius:var(--r)}
+.svc6 details.s6{overflow:hidden}
+.ps-row{border-radius:var(--r)}
