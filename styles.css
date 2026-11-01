@@ -1140,3 +1140,10 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .ps-text{display:grid;gap:12px;margin-top:20px;max-width:44ch;text-align:center}
 .ps-text p{margin:0;font-size:1.05rem;line-height:1.55;color:#2a2a2a}
 .ps-btn{margin-top:24px}
+
+/* Services: warm gold band with pale gold tiles */
+.svc6{background:linear-gradient(#ecbc66,#dca85a)}
+.svc-head .eyebrow{color:#b3693f}
+.svc6 .s6{background:#f5d690;border:0}
+.svc6 .s6-ic svg{stroke:#141414}
+.svc6 .s6-tx b{color:#141414}
