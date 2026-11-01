@@ -1355,3 +1355,15 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 /* hero buttons: same width (as wide as the longer one) */
 .hero-btns{width:fit-content;justify-items:stretch}
 .hero-b{justify-content:center}
+
+/* Action cards */
+.actcards{background:#f1f1ee;padding:68px 0 40px;margin-top:18px}
+.ac-grid{width:calc(100% - 30px);max-width:760px;display:grid;gap:68px}
+.ac{position:relative;background:#fff;border:1px solid #e4e4de;box-shadow:0 6px 18px rgba(0,0,0,.08);padding:64px 22px 30px;display:grid;gap:12px;justify-items:start}
+.ac-ic{position:absolute;left:50%;top:-50px;transform:translateX(-50%);width:100px;height:100px;border-radius:50%;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.14);display:grid;place-items:center}
+.ac h3{margin:0;font-size:1.5rem;font-weight:700;color:#0f0f0f;line-height:1.2}
+.ac p{margin:0;font-size:1.05rem;line-height:1.6;color:#2a2a2a}
+.ac-btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;font-size:1rem;margin-top:8px}
+@media(min-width:760px){.ac-grid{max-width:1000px;grid-template-columns:1fr 1fr;gap:68px 24px}.actcards{padding:80px 0 56px}}
+.ac{align-content:start}
+@media(min-width:760px){.ac:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 12px)}}
