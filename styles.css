@@ -1103,3 +1103,22 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .ph-strip{font-size:1.15rem;font-weight:600;padding:11px 12px;gap:8px}
   .ph-strip svg{width:20px;height:20px}
 }
+
+/* Meet the owner: name above the photo, FAQ-style spacing */
+.owner-in{grid-template-columns:1fr;gap:20px;grid-template-areas:"head" "img" "copy"}
+.owner-head{grid-area:head;display:grid;gap:4px;justify-items:center;text-align:center}
+.owner-head .eyebrow{margin:0;font-size:1rem;letter-spacing:.04em;color:#946a00;text-align:center}
+.owner-head .title{margin:0;font-size:1.75rem;line-height:1.15;font-weight:600;color:#0f0f0f;text-align:center}
+.owner-img{grid-area:img}
+.owner-copy{grid-area:copy}
+.owner{padding:26px 0 30px}
+.owner .container{width:calc(100% - 30px)}
+@media(min-width:800px){
+  .owner{padding:56px 0}
+  .owner .container{width:min(1000px,100% - 32px)}
+  .owner-in{grid-template-columns:.8fr 1.2fr;gap:20px 48px;grid-template-areas:"img head" "img copy";align-items:start}
+  .owner-head{justify-items:start;text-align:left;align-self:end}
+  .owner-head .eyebrow,.owner-head .title{text-align:left}
+  .owner-head .title{font-size:clamp(1.9rem,3vw,2.4rem)}
+  .owner-copy{align-self:start}
+}
