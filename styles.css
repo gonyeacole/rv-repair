@@ -1399,3 +1399,21 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .owner .owner-head .title,.owner-copy .title{color:#fff}
 .owner-copy p:not(.eyebrow){color:#eee}
 .owner-img{box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+
+/* Footer: black */
+.footer{background:#0f0f0f;color:#fff;border-top:0}
+.foot-copy{color:#fff}
+.foot-links a{color:#f6c119}
+.foot-links span{color:#fff}
+
+/* Experts + SEO sections: centered on phones, same title size and weight as other sections */
+@media(max-width:699px){
+  .callexp-in,.seo-in{justify-items:center;text-align:center}
+  .callexp-in .title,.seo-in .title{text-align:center;font-size:1.75rem;line-height:1.15;font-weight:600;letter-spacing:0}
+  .callexp-in p,.seo-in p{text-align:center}
+  .seo-bar{margin-inline:auto}
+}
+
+/* Action cards: centered */
+.ac{justify-items:center;text-align:center}
+.ac h3,.ac p{text-align:center}
