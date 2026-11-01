@@ -1346,3 +1346,8 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
   .hero .lead{font-size:1.15rem;line-height:1.6}
   .hero{padding:64px 0 56px}
 }
+
+/* hero: more room above the headline and below the buttons */
+.hero{padding:104px 0 96px}
+@media(max-width:700px){.hero{padding:104px 0 96px}}
+@media(min-width:701px){.hero{padding:128px 0 120px}}
