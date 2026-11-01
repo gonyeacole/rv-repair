@@ -1122,3 +1122,17 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .owner-head .title{font-size:clamp(1.9rem,3vw,2.4rem)}
   .owner-copy{align-self:start}
 }
+
+/* Simple pricing section */
+.pricing{background:#fff;padding:26px 0 34px;color:#0f0f0f}
+.price-simple{width:calc(100% - 20px);display:grid;gap:4px;justify-items:center}
+.price-simple .eyebrow{margin:0;font-size:1rem;letter-spacing:.04em;color:#946a00;text-align:center}
+.price-simple .title{margin:0;text-align:center;color:#0f0f0f;font-size:1.75rem;line-height:1.15;font-weight:600}
+.ps-sub{margin:10px 0 18px;text-align:center;font-size:1.05rem;color:#2a2a2a;max-width:34ch}
+.ps-rows{display:grid;gap:9px;width:100%}
+.ps-row{display:flex;justify-content:space-between;align-items:center;gap:16px;background:#f6f6f4;min-height:60px;padding:0 18px}
+.ps-name{font-size:1.1rem;font-weight:500;color:#0f0f0f}
+.ps-amt{font-size:1.35rem;font-weight:800;color:#0f0f0f;background:#f6c119;border-radius:4px;padding:3px 12px;white-space:nowrap}
+.ps-amt.ps-var{font-size:1rem;font-weight:700}
+.ps-btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;justify-content:center;font-size:1rem;margin-top:22px}
+@media(min-width:700px){.pricing{padding:44px 0 52px}.price-simple{width:min(720px,100% - 32px)}.title{font-size:clamp(1.9rem,3vw,2.4rem)}.ps-rows{gap:12px}.ps-row{min-height:68px}}
