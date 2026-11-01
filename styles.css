@@ -1468,3 +1468,6 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .callexp{margin-top:0!important;clip-path:none;padding-top:var(--sec-y)!important}
 .owner,.areadark,.seo-text{clip-path:polygon(0 0,100% var(--cut),100% 100%,0 100%)}
 .pricing,.actcards,.section.faq-section{clip-path:polygon(0 var(--cut),100% 0,100% 100%,0 100%)}
+
+.ac-head{margin-bottom:56px}
+.ac-head .title{margin-bottom:0!important}
