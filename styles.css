@@ -1351,3 +1351,7 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 .hero{padding:104px 0 96px}
 @media(max-width:700px){.hero{padding:104px 0 96px}}
 @media(min-width:701px){.hero{padding:128px 0 120px}}
+
+/* hero buttons: same width (as wide as the longer one) */
+.hero-btns{width:fit-content;justify-items:stretch}
+.hero-b{justify-content:center}
