@@ -1149,3 +1149,10 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .ps-amt{background:#0f0f0f;color:#f6c119}
 .ps-btn,.ps-btn:hover{background:#0f0f0f;color:#fff}
 .ps-btn:hover{background:#262626}
+
+/* Paragraph rhythm: large text, tight lines, one clear gap between paragraphs */
+.owner-copy{gap:16px}
+.owner-copy p:not(.eyebrow),.ps-text p{font-size:1.1rem;line-height:1.45;margin:0}
+.ps-text{gap:16px;max-width:36ch}
+.owner-copy{justify-items:center}
+@media(min-width:800px){.owner-copy{justify-items:start}.owner-copy p:not(.eyebrow){max-width:54ch}}
