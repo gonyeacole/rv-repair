@@ -1141,15 +1141,11 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .ps-text p{margin:0;font-size:1.05rem;line-height:1.55;color:#2a2a2a}
 .ps-btn{margin-top:24px}
 
-/* Services: warm gold band with pale gold tiles */
-.svc6{background:linear-gradient(#ecbc66,#dca85a)}
-.svc-head .eyebrow{color:#b3693f}
-.svc6 .s6{background:#f5d690;border:0}
-.svc6 .s6-ic svg{stroke:#141414}
-.svc6 .s6-tx b{color:#141414}
-
-/* Services: site yellow band with pale yellow tiles */
-.svc6{background:linear-gradient(#f6c119,#e8b216)}
-.svc-head .eyebrow{color:#6b4a00}
-.svc6 .s6{background:#fbe08c;border:0}
-.svc6{border-top:6px solid #0f0f0f}
+/* Pricing: site yellow band with pale yellow tiles */
+.pricing{background:linear-gradient(#f6c119,#e8b216)}
+.price-simple .eyebrow{color:#6b4a00}
+.price-simple .title,.ps-text p,.ps-name{color:#0f0f0f}
+.ps-row{background:#fbe08c}
+.ps-amt{background:#0f0f0f;color:#f6c119}
+.ps-btn,.ps-btn:hover{background:#0f0f0f;color:#fff}
+.ps-btn:hover{background:#262626}
