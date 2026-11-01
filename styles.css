@@ -1077,3 +1077,23 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
   .faq-section .faq details{margin-bottom:12px}
   .faq-section .faq summary{min-height:64px}
 }
+
+/* ===== Phone header: yellow phone strip, logo left, hamburger right ===== */
+.ph-strip{display:none}
+@media(max-width:980px){
+  .ph-strip{display:flex;align-items:center;justify-content:center;gap:10px;background:#f6c119;color:#0f0f0f;font-weight:700;font-size:1.5rem;padding:10px 12px;letter-spacing:.01em}
+  .ph-strip svg{flex:none}
+  .site-header{position:relative}
+  .hd-main{display:flex;align-items:center;justify-content:space-between;grid-template-columns:none;padding:8px 16px;gap:12px}
+  .hd-main .brand{grid-column:auto;justify-self:auto}
+  .hd-main .brand img{height:74px}
+  .hd-cta{display:none}
+  .hd-main .burger{display:grid;place-content:center;gap:0;width:50px;height:50px;padding:0;margin:0;background:#fff;border:3px solid #0f0f0f;border-radius:12px;flex:none}
+  .burger span{width:26px;height:3px;border-radius:2px;background:#0f0f0f;margin:3px 0}
+  .menu,.menu.open{position:absolute;left:0;right:0;top:100%;z-index:60;display:block;background:#0f0f0f;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+  .menu .menu-toggle{display:none}
+  .menu .menu-in{display:none;flex-direction:column;overflow:visible;padding:0 22px 8px;background:#0f0f0f}
+  .menu.open .menu-in{display:flex}
+  .menu a{padding:15px 4px;border-bottom:1px solid rgba(255,255,255,.18);font-size:.95rem}
+  .menu a:last-child{border-bottom:0}
+}
