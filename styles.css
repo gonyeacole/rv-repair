@@ -1417,3 +1417,7 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 /* Action cards: centered */
 .ac{justify-items:center;text-align:center}
 .ac h3,.ac p{text-align:center}
+
+/* Action cards section: yellow background */
+.actcards{background:linear-gradient(#f6c119,#e8b216)}
+.ac{border-color:rgba(0,0,0,.12);box-shadow:0 8px 20px rgba(0,0,0,.18)}
