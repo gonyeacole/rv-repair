@@ -1156,3 +1156,9 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .ps-text{gap:16px;max-width:36ch}
 .owner-copy{justify-items:center}
 @media(min-width:800px){.owner-copy{justify-items:start}.owner-copy p:not(.eyebrow){max-width:54ch}}
+
+/* Paragraph rhythm, measured from the reference: line height 1.6, one full line between paragraphs */
+.owner-copy p:not(.eyebrow),.ps-text p,.hero .lead,.area-sub,.who p,.faq details p,.est-fine{line-height:1.6}
+.owner-copy,.ps-text{gap:1em}
+.owner-copy{gap:1.1em}
+.ps-text{gap:1.1em}
