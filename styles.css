@@ -1459,3 +1459,11 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 
 .ac-head{margin-bottom:56px}
 .ac-head .title{margin-bottom:0!important}
+
+/* How it works: cards like the action cards, on the black background */
+.section.steps{padding-top:calc(var(--sec-y) + 34px)!important}
+.steps .ac-head{margin-bottom:56px}
+.steps .ac-head .title{margin-bottom:0!important}
+.steps .ac{box-shadow:0 8px 20px rgba(0,0,0,.5);border-color:rgba(255,255,255,.1)}
+.ac-step{margin:0!important;font-size:.85rem!important;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#946a00!important}
+@media(min-width:760px){.how-grid{grid-template-columns:repeat(3,1fr)}.how-grid .ac:last-child{grid-column:auto;width:auto;justify-self:stretch}}
