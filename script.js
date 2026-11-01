@@ -107,8 +107,11 @@ form.addEventListener("submit", (e) => {
     origin: { label: "Otter Creek, WI", query: "Otter Creek, Wisconsin, USA", lat: 44.86, lon: -91.33 },
     visitFee: 120,          // includes travel and the first hour of labor
     hourlyRate: 120,        // each extra hour
-    freeMiles: Infinity,    // miles of travel included in the visit fee
-    perMileBeyondFree: 0,   // dollars per mile beyond freeMiles (0 = travel always included)
+    // Trip fee: no charge within freeMinutes of drive time; farther out, round-trip drive time x tripRate, never less than tripMinimum.
+    // These three numbers are placeholders copied from an example. Set your real ones.
+    freeMinutes: 30,
+    tripRate: 100,          // dollars per hour of round-trip drive time
+    tripMinimum: 50,
     callIfOverMiles: 75,    // beyond this, ask the visitor to call first
     roadFactor: 1.25,       // used only if the routing service is unavailable
     // typical EXTRA labor hours beyond the first hour: [low, high]
@@ -127,6 +130,8 @@ form.addEventListener("submit", (e) => {
   if (!form || !out) return;
   const phone = (typeof CONFIG !== "undefined" && CONFIG.phoneDisplay) || "(715) 308-1833";
   const phoneHref = (typeof CONFIG !== "undefined" && CONFIG.phoneHref) || "+17153081833";
+  const pol = document.getElementById("est-policy");
+  if (pol) pol.textContent = `Within about ${EST_CONFIG.freeMinutes} minutes of ${EST_CONFIG.origin.label} there is no trip fee. Farther out, we still come to you. A trip fee applies based on drive time: $${EST_CONFIG.tripRate} an hour round trip, $${EST_CONFIG.tripMinimum} minimum.`;
   const money = (n) => "$" + Math.round(n).toLocaleString("en-US");
   const miles = (m) => m / 1609.344;
 
@@ -185,8 +190,9 @@ form.addEventListener("submit", (e) => {
       const d = await drive(origin, dest);
       const mi = miles(d.meters), mins = Math.max(1, Math.round(d.seconds / 60));
       const far = mi > EST_CONFIG.callIfOverMiles;
-      const extraMiles = Math.max(0, mi - EST_CONFIG.freeMiles);
-      const travelFee = extraMiles * EST_CONFIG.perMileBeyondFree;
+      const roundTripHrs = (2 * d.seconds) / 3600;
+      const travelFee = mins > EST_CONFIG.freeMinutes ? Math.max(EST_CONFIG.tripMinimum, roundTripHrs * EST_CONFIG.tripRate) : 0;
+      const roundTripTxt = (Math.round(roundTripHrs * 10) / 10) + " hr round trip";
       const lo = EST_CONFIG.visitFee + EST_CONFIG.hourlyRate * svc.hours[0] + travelFee;
       const hi = EST_CONFIG.visitFee + EST_CONFIG.hourlyRate * svc.hours[1] + travelFee;
       const range = lo === hi ? money(lo) : money(lo) + " to " + money(hi);
@@ -198,9 +204,9 @@ form.addEventListener("submit", (e) => {
           ${far ? `<p class="est-msg warn">That is farther than we usually travel. Please call or text <a href="tel:${phoneHref}">${phone}</a> and we will tell you if we can come.</p>` : ""}
           <div class="est-price"><span>${esc(svc.name)}, typical range</span><b>${range}</b><small>plus parts and materials</small></div>
           <ul class="est-lines">
-            <li><span>Service visit (travel and 1st hour included)</span><b>${money(EST_CONFIG.visitFee)}</b></li>
+            <li><span>Service visit (1st hour of labor included)</span><b>${money(EST_CONFIG.visitFee)}</b></li>
+            <li><span>${travelFee > 0 ? "Trip fee (" + roundTripTxt + " at $" + EST_CONFIG.tripRate + "/hr)" : "Trip fee (within " + EST_CONFIG.freeMinutes + " min of " + esc(EST_CONFIG.origin.label) + ")"}</span><b>${travelFee > 0 ? money(travelFee) : "none"}</b></li>
             <li><span>Extra labor, if needed ($${EST_CONFIG.hourlyRate} an hour)</span><b>${svc.hours[1] === 0 ? "none" : svc.hours[0] === svc.hours[1] ? svc.hours[0] + " hr" : svc.hours[0] + " to " + svc.hours[1] + " hr"}</b></li>
-            ${travelFee > 0 ? `<li><span>Extra travel (${Math.round(extraMiles)} miles beyond the included miles)</span><b>${money(travelFee)}</b></li>` : ""}
             <li><span>Parts and materials</span><b>billed separately</b></li>
           </ul>
           <p class="est-fine">${esc(svc.note)} This is an estimate, not a quote. You get the final price after the diagnosis.</p>

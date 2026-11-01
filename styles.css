@@ -1162,3 +1162,4 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .est-req{border:0;background:#0f0f0f;color:#fff}
 .est-req:hover{background:#262626}
 .est-call{border:2px solid #0f0f0f;color:#0f0f0f;background:#fff}
+.est-policy{font-size:.9rem;line-height:1.5;color:#2a2a2a;background:#f6f6f4;border-radius:4px;padding:12px 14px;margin:6px 0 0}
