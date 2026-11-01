@@ -1304,3 +1304,7 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
 .seo-in p{margin:0;font-size:1.05rem;line-height:1.6;color:#2a2a2a}
 .seo-in p a{color:#946a00;font-weight:700;text-decoration:underline}
 @media(min-width:700px){.seo-text{padding:44px 0 52px}.seo-in .title{font-size:clamp(1.9rem,3vw,2.4rem)}}
+.seo-in{text-align:center;justify-items:center}
+.seo-in h3,.seo-in p{text-align:center}
+.seo-in p{max-width:36ch}
+@media(min-width:700px){.seo-in p{max-width:60ch}}
