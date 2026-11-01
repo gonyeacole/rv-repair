@@ -110,7 +110,7 @@ form.addEventListener("submit", (e) => {
     // Trip fee: no charge within freeMinutes of drive time; farther out, round-trip drive time x tripRate, never less than tripMinimum.
     // These three numbers are placeholders copied from an example. Set your real ones.
     freeMinutes: 30,
-    tripRate: 100,          // dollars per hour of round-trip drive time
+    tripRate: 120,          // dollars per hour of round-trip drive time
     tripMinimum: 50,
     callIfOverMiles: 75,    // beyond this, ask the visitor to call first
     roadFactor: 1.25,       // used only if the routing service is unavailable
