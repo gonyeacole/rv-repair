@@ -1393,3 +1393,9 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .ac p{font-size:.98rem;line-height:1.5}
 .ac-btn{margin-top:4px}
 @media(min-width:760px){.actcards{padding:60px 0 36px}.ac-grid{gap:50px 20px}}
+
+/* Meet the owner: black background */
+.owner{background:#0f0f0f}
+.owner .owner-head .title,.owner-copy .title{color:#fff}
+.owner-copy p:not(.eyebrow){color:#eee}
+.owner-img{box-shadow:0 0 0 1px rgba(255,255,255,.12)}
