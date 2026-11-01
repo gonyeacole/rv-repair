@@ -1136,3 +1136,7 @@ h1,h2,h3,h4,.title,.hero h1,.quote-card h2,.s6-tx b,.wt b,.pc-it b{letter-spacin
 .ps-amt.ps-var{font-size:1rem;font-weight:700}
 .ps-btn{height:50px;padding:0 30px;border-radius:4px;border:0;display:inline-flex;align-items:center;justify-content:center;font-size:1rem;margin-top:22px}
 @media(min-width:700px){.pricing{padding:44px 0 52px}.price-simple{width:min(720px,100% - 32px)}.title{font-size:clamp(1.9rem,3vw,2.4rem)}.ps-rows{gap:12px}.ps-row{min-height:68px}}
+.price-simple .title{margin-bottom:18px}
+.ps-text{display:grid;gap:12px;margin-top:20px;max-width:44ch;text-align:center}
+.ps-text p{margin:0;font-size:1.05rem;line-height:1.55;color:#2a2a2a}
+.ps-btn{margin-top:24px}
