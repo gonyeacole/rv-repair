@@ -1336,3 +1336,13 @@ html.a11y-filter body>*:not(.a11y-root):not(.a11y-line):not(.a11y-mask):not(scri
   .hero .lead{margin-inline:0}
   .hero-cta,.btn.btn-lg.hero-cta{margin-inline:0;display:inline-flex;width:fit-content}
 }
+
+/* Hero v3: mixed-case headline, two stacked buttons */
+.hero h1{text-transform:none;letter-spacing:-.01em;font-weight:700}
+.hero-btns{display:grid;gap:12px;justify-items:start;margin-top:24px}
+.hero-b{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 30px;border-radius:4px;border:0;font-size:1rem;font-weight:700}
+@media(max-width:700px){
+  .hero h1{font-size:2.15rem;line-height:1.15;margin:0 0 20px}
+  .hero .lead{font-size:1.15rem;line-height:1.6}
+  .hero{padding:64px 0 56px}
+}
