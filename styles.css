@@ -1456,3 +1456,15 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .svc6 .s6,.ps-row,.ac,.faq-section .faq details,.area-map,.owner-img,.s6-more{border-radius:var(--r)}
 .svc6 details.s6{overflow:hidden}
 .ps-row{border-radius:var(--r)}
+
+/* ===== Angled edges between sections ===== */
+:root{--cut:20px}
+.callexp,.svc6,.section.steps,.pricing,.owner,.actcards,.seo-text,.areadark,.section.faq-section{
+  margin-top:calc(var(--cut) * -1)!important;
+  padding-top:calc(var(--sec-y) + var(--cut))!important;
+  clip-path:polygon(0 var(--cut),100% 0,100% 100%,0 100%);
+  position:relative}
+.actcards{padding-top:calc(var(--sec-y) + var(--cut) + 34px)!important}
+.callexp{margin-top:0!important;clip-path:none;padding-top:var(--sec-y)!important}
+.owner,.areadark,.seo-text{clip-path:polygon(0 0,100% var(--cut),100% 100%,0 100%)}
+.pricing,.actcards,.section.faq-section{clip-path:polygon(0 var(--cut),100% 0,100% 100%,0 100%)}
