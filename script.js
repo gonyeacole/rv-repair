@@ -29,8 +29,8 @@ menu.addEventListener("click", (e) => {
 // Quote form: opens the visitor's email app with the request pre-filled.
 // Swap for a form service (Formspree, Netlify Forms, etc.) to receive submissions directly.
 const form = document.getElementById("quote");
-const msg = form.querySelector(".form-msg");
-form.addEventListener("submit", (e) => {
+const msg = form ? form.querySelector(".form-msg") : null;
+if (form) form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
   if (!d.first || !d.phone || !d.details) {
