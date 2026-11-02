@@ -1467,3 +1467,10 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .steps .ac{box-shadow:0 8px 20px rgba(0,0,0,.5);border-color:rgba(255,255,255,.1)}
 .ac-step{margin:0!important;font-size:.85rem!important;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#946a00!important}
 @media(min-width:760px){.how-grid{grid-template-columns:repeat(3,1fr)}.how-grid .ac:last-child{grid-column:auto;width:auto;justify-self:stretch}}
+
+/* Contact form: light grey background */
+.quotesec{background:#f1f1ee}
+.quotesec .quote-card{background:#f1f1ee;color:#0f0f0f}
+.qc-call{border-bottom-color:#d5d5cf}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#c9c9c2}
+.quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0f0f0f}
