@@ -1474,3 +1474,11 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
 .qc-call{border-bottom-color:#d5d5cf}
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#c9c9c2}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0f0f0f}
+
+/* Contact form: light grey on phones only; desktop keeps the yellow card */
+@media(min-width:701px){
+  .quotesec{background:#0f0f0f}
+  .quotesec .quote-card{background:#f6c119}
+  .qc-call{border-bottom-color:rgba(0,0,0,.2)}
+  .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#b8891a}
+}
