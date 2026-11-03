@@ -1482,3 +1482,36 @@ details.s6[open] .s6-chev{transform:rotate(-135deg);margin:4px 4px 0 0}
   .qc-call{border-bottom-color:rgba(0,0,0,.2)}
   .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#b8891a}
 }
+
+/* ===== Hero v4: stars, paragraph, checklist, full-width buttons ===== */
+.hero-stars{display:flex;gap:1px;margin:0 0 14px}
+.hero-checks{list-style:none;padding:0;display:grid;gap:8px;margin:18px 0 20px}
+.hero-checks li{display:flex;align-items:center;gap:12px;font-size:1.05rem;color:#fff;line-height:1.4}
+.hero-checks svg{flex:none;width:17px;height:17px}
+.hero-btns2{display:grid;gap:14px;width:100%;max-width:440px;margin-top:6px}
+.hb{display:flex;align-items:center;justify-content:center;gap:12px;height:48px;border-radius:5px;font-size:1.05rem;font-weight:500;letter-spacing:.02em;text-transform:uppercase;width:100%}
+.hb-y{background:#f6c119;color:#0f0f0f}
+.hb-y:hover{background:#d9a516}
+.hb-w{background:#fbfbf8;color:#0f0f0f;border:1px solid #ddd}
+.hb-w:hover{background:#fff}
+.hero h1{font-size:2.15rem;line-height:1.15;letter-spacing:-.01em;font-weight:700;margin:0 0 16px}
+@media(max-width:700px){.hero{padding:84px 0 48px}.hero .lead{margin:0}}
+@media(min-width:701px){.hero h1{font-size:clamp(2.4rem,4.4vw,3.2rem)}}
+
+/* ===== Contact form: dark band, white fields, yellow accents ===== */
+.quotesec{background:#241a17;padding:0}
+.quotesec .container{max-width:none;width:100%}
+.quotesec .quote-card{background:#241a17;color:#fff;border-radius:0;padding:24px 24px 32px;max-width:760px;margin-inline:auto}
+.quotesec .quote-card h2,.quotesec .qc-sub,.quotesec .qc-kicker,.quotesec .qc-fine{color:#fff}
+.quotesec .qc-phone{color:#f6c119}
+.qc-call{border-bottom-color:rgba(255,255,255,.2)}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{background:#fff;color:#141414;border-color:#cfc8c3}
+.quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#f6c119;outline:3px solid #f6c119;outline-offset:1px}
+.qc-submit{background:#f6c119;color:#0f0f0f;font-weight:700}
+.qc-submit:hover{background:#d9a516}
+.quotesec .form-msg.err{color:#ffb4ab}.quotesec .form-msg.ok{color:#f6c119}
+@media(min-width:701px){
+  .quotesec{background:#241a17}
+  .quotesec .quote-card{background:#241a17}
+}
+@media(max-width:700px){.hero::after{background:linear-gradient(rgba(0,0,0,.74),rgba(0,0,0,.66))}}
