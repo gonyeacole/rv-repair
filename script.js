@@ -99,3 +99,19 @@ form.addEventListener("submit", (e) => {
   btn.addEventListener("click", () => set(!nav.classList.contains("open")));
   nav.addEventListener("click", (e) => { if (e.target.closest(".menu-in a")) set(false); });
 })();
+
+// Phones: show the quote form inside the hero (the photo fades into the form). Larger screens keep it as its own band.
+(function () {
+  const hero = document.querySelector(".hero");
+  const q = document.querySelector(".quotesec");
+  if (!hero || !q || !window.matchMedia) return;
+  const mq = window.matchMedia("(max-width: 700px)");
+  const marker = document.createComment("quote-home");
+  q.parentNode.insertBefore(marker, q);
+  function place() {
+    if (mq.matches) { if (q.parentNode !== hero) hero.appendChild(q); }
+    else if (q.parentNode === hero) { marker.parentNode.insertBefore(q, marker.nextSibling); }
+  }
+  if (mq.addEventListener) mq.addEventListener("change", place); else mq.addListener(place);
+  place();
+})();
