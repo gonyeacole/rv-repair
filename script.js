@@ -100,17 +100,17 @@ form.addEventListener("submit", (e) => {
   nav.addEventListener("click", (e) => { if (e.target.closest(".menu-in a")) set(false); });
 })();
 
-// Phones: show the quote form inside the hero (the photo fades into the form). Larger screens keep it as its own band.
+// Desktop: show the quote form inside the hero, beside the headline. Phones keep it as its own band under the hero.
 (function () {
-  const hero = document.querySelector(".hero");
+  const grid = document.querySelector(".hero .hero-grid");
   const q = document.querySelector(".quotesec");
-  if (!hero || !q || !window.matchMedia) return;
-  const mq = window.matchMedia("(max-width: 700px)");
+  if (!grid || !q || !window.matchMedia) return;
+  const mq = window.matchMedia("(min-width: 701px)");
   const marker = document.createComment("quote-home");
   q.parentNode.insertBefore(marker, q);
   function place() {
-    if (mq.matches) { if (q.parentNode !== hero) hero.appendChild(q); }
-    else if (q.parentNode === hero) { marker.parentNode.insertBefore(q, marker.nextSibling); }
+    if (mq.matches) { if (q.parentNode !== grid) grid.appendChild(q); }
+    else if (q.parentNode === grid) { marker.parentNode.insertBefore(q, marker.nextSibling); }
   }
   if (mq.addEventListener) mq.addEventListener("change", place); else mq.addListener(place);
   place();
