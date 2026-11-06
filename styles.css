@@ -1550,3 +1550,5 @@ body{background:var(--cr)}
 .seo-bar{background:var(--or)}
 .county-list li::before,.cty li::before{background:var(--or)}
 .faq-section .faq details,.svc6 .s6{background:#f1ede3}
+.hd-main .brand img{height:80px;width:auto}
+@media(max-width:980px){.hd-main .brand img{height:70px}}
