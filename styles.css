@@ -1572,7 +1572,7 @@ body{background:var(--cr)}
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{background:#f8f7f2!important;border:2px solid #e3dccb!important;border-radius:14px!important;color:#2f1f05}
 .quotesec .quote-card input::placeholder,.quotesec .quote-card textarea::placeholder{color:#8a7d6b}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#e0441b!important;outline:3px solid rgba(224,68,27,.35)!important}
-.qc-submit{border-radius:999px!important;padding:0 40px!important}
+.qc-submit{border-radius:4px!important;padding:0 30px!important}
 @media(min-width:701px){.quotesec .container{margin-top:-110px}.hero{padding-bottom:150px!important}}
 @media(max-width:700px){.quotesec .quote-card{padding:24px 16px 28px!important}}
 .quotesec .quote-card{padding-top:26px!important}
