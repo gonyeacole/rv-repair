@@ -1587,3 +1587,7 @@ body{background:var(--cr)}
 .quotesec .quote-card{border-radius:5px!important}
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-radius:5px!important}
 .qc-submit{border-radius:5px!important}
+
+/* Hero photo: more faded behind the text */
+.hero::after{background:linear-gradient(rgba(30,18,2,.86),rgba(30,18,2,.8) 55%,rgba(30,18,2,.88))}
+@media(max-width:700px){.hero::after{background:linear-gradient(rgba(30,18,2,.88),rgba(30,18,2,.84))}}
