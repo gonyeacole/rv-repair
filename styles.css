@@ -1616,3 +1616,19 @@ body{background:var(--cr)}
 a.pp-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
 .pp-h{margin-bottom:10px}
 .pp-h{margin-bottom:22px}
+
+/* Services: two-column icon tiles (expand to full width when opened) */
+.svc6-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}
+@media(min-width:1000px){.svc6-grid{grid-template-columns:repeat(3,1fr)!important;gap:14px!important}}
+.svc6 details.s6{background:#f8f7f2!important;border:1px solid #e3dccb!important}
+.svc6 details.s6[open]{grid-column:1/-1}
+.svc6 .s6-sum{position:relative;flex-direction:column;justify-content:center;gap:10px;min-height:128px;padding:20px 12px 16px;text-align:center}
+.svc6 .s6-sum .s6-tx{flex:none}
+.svc6 .s6-ic,.svc6 .s6-ic.c1,.svc6 .s6-ic.c2,.svc6 .s6-ic.c3,.svc6 .s6-ic.c4,.svc6 .s6-ic.c5,.svc6 .s6-ic.c6{width:36px;height:36px;color:#e0441b}
+.svc6 .s6-ic svg{width:36px;height:36px;stroke:#e0441b;stroke-width:1.7}
+.svc6 .s6-tx b{font-size:1rem;font-weight:600;line-height:1.25}
+.svc6 .s6-chev{position:absolute;top:12px;right:12px;width:8px;height:8px;border-width:2px;margin:0;opacity:.55}
+.svc6 details.s6[open] .s6-chev{margin:4px 0 0}
+.svc6 details.s6[open] .s6-sum{min-height:0;flex-direction:row;justify-content:flex-start;text-align:left;padding:16px 18px;gap:16px}
+.svc6 details.s6[open] .s6-chev{top:50%;margin-top:-2px;right:18px}
+.svc6 .s6-ic{transition:none}
