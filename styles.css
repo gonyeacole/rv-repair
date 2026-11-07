@@ -1640,3 +1640,7 @@ a.pp-btn{display:inline-flex;align-items:center;justify-content:center;text-deco
 /* Services sits under the quote form on tan */
 .svc6{background:#f1ede3!important}
 .svc6 div.s6{background:#f8f7f2!important}
+
+/* Form section and Services share one tan, no seam */
+.quotesec{background:#f1ede3!important;padding-bottom:0!important}
+.svc6{padding-top:30px!important}
