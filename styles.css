@@ -1582,3 +1582,8 @@ body{background:var(--cr)}
 .quotesec .quote-card h2{text-transform:none!important;font-size:1.5rem!important;font-weight:700!important;line-height:1.2!important;margin:0 0 4px!important}
 .quotesec .qc-sub{color:#6b5a42!important;margin-top:0!important;font-size:.95rem}
 .quotesec .qc-sub+.qc-sub{font-size:.8rem!important;color:#8a7d6b!important;margin-top:-6px!important}
+
+/* Form corners match the hero buttons (5px) */
+.quotesec .quote-card{border-radius:5px!important}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-radius:5px!important}
+.qc-submit{border-radius:5px!important}
