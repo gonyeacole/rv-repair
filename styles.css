@@ -1591,3 +1591,6 @@ body{background:var(--cr)}
 /* Hero photo: more faded behind the text */
 .hero::after{background:linear-gradient(rgba(30,18,2,.86),rgba(30,18,2,.8) 55%,rgba(30,18,2,.88))}
 @media(max-width:700px){.hero::after{background:linear-gradient(rgba(30,18,2,.88),rgba(30,18,2,.84))}}
+
+/* Hero checklist: bold */
+.hero-checks li{font-weight:700}
