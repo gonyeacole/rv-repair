@@ -99,3 +99,21 @@ form.addEventListener("submit", (e) => {
   btn.addEventListener("click", () => set(!nav.classList.contains("open")));
   nav.addEventListener("click", (e) => { if (e.target.closest(".menu-in a")) set(false); });
 })();
+
+
+// Pricing promo: See Pricing button opens and closes the price details.
+(function () {
+  const btn = document.querySelector(".pp-btn");
+  const more = document.getElementById("pricing-more");
+  if (!btn || !more) return;
+  btn.addEventListener("click", () => {
+    const open = more.hidden;
+    more.hidden = !open;
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Hide Pricing" : "See Pricing";
+  });
+  // Links to #pricing from the menu open the details too.
+  document.querySelectorAll('a[href="#pricing"]').forEach((a) => a.addEventListener("click", () => {
+    if (more.hidden) btn.click();
+  }));
+})();
