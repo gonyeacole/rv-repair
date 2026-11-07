@@ -1647,3 +1647,7 @@ a.pp-btn{display:inline-flex;align-items:center;justify-content:center;text-deco
 
 /* Services tiles white */
 .svc6 div.s6{background:#fff!important;border-color:#e3dccb!important}
+
+/* Services: title closer to tiles */
+.svc6 .svc-head .title{margin-bottom:0!important}
+.svc6 .svc6-grid{padding-top:14px!important}
