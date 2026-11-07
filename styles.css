@@ -1651,3 +1651,6 @@ a.pp-btn{display:inline-flex;align-items:center;justify-content:center;text-deco
 /* Services: title closer to tiles */
 .svc6 .svc-head .title{margin-bottom:0!important}
 .svc6 .svc6-grid{padding-top:14px!important}
+
+/* Titles in Montserrat */
+h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,system-ui,sans-serif!important;font-weight:700!important;letter-spacing:-.01em!important}
