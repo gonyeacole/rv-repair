@@ -1577,3 +1577,8 @@ body{background:var(--cr)}
 @media(max-width:700px){.quotesec .quote-card{padding:24px 16px 28px!important}}
 .quotesec .quote-card{padding-top:26px!important}
 .quotesec .quote-card h2{margin-top:0}
+
+/* Form heading: mixed case, centered, muted instruction, small required note */
+.quotesec .quote-card h2{text-transform:none!important;font-size:1.5rem!important;font-weight:700!important;line-height:1.2!important;margin:0 0 4px!important}
+.quotesec .qc-sub{color:#6b5a42!important;margin-top:0!important;font-size:.95rem}
+.quotesec .qc-sub+.qc-sub{font-size:.8rem!important;color:#8a7d6b!important;margin-top:-6px!important}
