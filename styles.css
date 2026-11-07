@@ -1644,3 +1644,6 @@ a.pp-btn{display:inline-flex;align-items:center;justify-content:center;text-deco
 /* Form section and Services share one tan, no seam */
 .quotesec{background:#f1ede3!important;padding-bottom:0!important}
 .svc6{padding-top:30px!important}
+
+/* Services tiles white */
+.svc6 div.s6{background:#fff!important;border-color:#e3dccb!important}
