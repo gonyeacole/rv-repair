@@ -1762,3 +1762,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .sl-more{justify-self:start;margin-top:4px;font-size:.85rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0d1b35}
 .sl-more:hover{color:#d21f39}
 @media(min-width:700px){.sl-row{gap:28px;padding:36px 0}.sl-ic{width:64px;height:64px}.sl-tx h3{font-size:1.6rem}.sl-tx p{font-size:1.05rem;max-width:62ch}}
+.svc6.sl{background:#fff!important}
