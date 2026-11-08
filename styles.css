@@ -1679,3 +1679,5 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .qc-fine{font-size:.85rem;text-align:center}
 .quotesec .form-msg{text-align:center}
 .quotesec .qc-submit{width:100%;height:56px;padding:0 20px!important;color:#fff!important;text-transform:uppercase;letter-spacing:.2em;font-weight:600;font-size:.95rem}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{background:#fff!important;border:1.5px solid #c9d2e6!important}
+.quotesec .quote-card input:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:1px}
