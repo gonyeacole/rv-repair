@@ -40,7 +40,7 @@ form.addEventListener("submit", (e) => {
   }
   const name = d.name;
   const body = [
-    `Name: ${name}`, `Phone: ${d.phone}`, `Address: ${d.address}`, `Service: ${d.service}`,
+    `Name: ${name}`, `Phone: ${d.phone}`, `Address: ${d.address}`, `Service: ${d.service}`, "", d.details || "",
   ].join("\n");
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request from " + name)}&body=${encodeURIComponent(body)}`;
   msg.textContent = "Thanks! Your email app should open with your request. You can also call us.";
