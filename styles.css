@@ -1768,3 +1768,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec{background:#fff!important;padding-bottom:0!important}
 .svc6.sl{padding-top:64px!important}
 .quotesec .quote-card{box-shadow:0 12px 30px rgba(8,16,34,.22)!important}
+
+/* Services title kept for screen readers and search, hidden from view */
+.svc6.sl .svc-head{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.svc6.sl{padding-top:40px!important}
+.svc6.sl .sl-row:first-child{border-top:0}
