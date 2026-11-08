@@ -1803,3 +1803,11 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 @media(max-width:699px){.tb-list{width:calc(100% - 28px)!important;gap:16px 10px!important}.tb-list li{gap:8px;font-size:.88rem}.tb-list svg{width:20px;height:20px}}
 .trustbar .container{padding-left:0;padding-right:0;width:100%;max-width:none}
 @media(max-width:699px){.tb-list{width:calc(100% - 36px)!important}}
+
+/* Form lives inside the hero */
+.hero,.hero{padding-bottom:56px!important}
+@media(min-width:701px){.hero{padding-bottom:72px!important}}
+.hero .quotesec.qs-in{background:transparent!important;padding:0!important;display:block}
+.hero .quotesec.qs-in .quote-card{margin:0;width:100%}
+.hero-grid{display:grid;gap:36px}
+@media(min-width:981px){.hero-grid{grid-template-columns:minmax(0,1fr) 460px!important;gap:56px;align-items:center!important}}
