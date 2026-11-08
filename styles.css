@@ -1794,3 +1794,12 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 
 /* Phone: form card in dark blue */
 @media(max-width:700px){.quotesec .quote-card{background:#0d1b35!important}}
+
+/* Trust bar: 2 columns by 2 rows */
+.tb-list{grid-template-columns:1fr 1fr!important;gap:18px 16px!important;justify-content:stretch!important;max-width:760px}
+.tb-list li{align-items:flex-start;font-size:.95rem}
+.tb-list svg{margin-top:1px}
+@media(min-width:700px){.tb-list li{font-size:1.05rem;align-items:center}}
+@media(max-width:699px){.tb-list{width:calc(100% - 28px)!important;gap:16px 10px!important}.tb-list li{gap:8px;font-size:.88rem}.tb-list svg{width:20px;height:20px}}
+.trustbar .container{padding-left:0;padding-right:0;width:100%;max-width:none}
+@media(max-width:699px){.tb-list{width:calc(100% - 36px)!important}}
