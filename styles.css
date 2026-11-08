@@ -1780,3 +1780,14 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .callexp .callexp-in,.callexp .container{justify-items:start!important;align-items:flex-start!important}
 .callexp .slant-btn{justify-self:start!important;margin-left:0!important;margin-right:auto!important}
 .callexp .title,.callexp p,.callexp .eyebrow{margin-left:0!important;margin-right:0!important}
+
+/* Trust bar under the form */
+.trustbar{background:#3663be;padding:30px 0}
+.tb-list{list-style:none;margin:0 auto;padding:0;width:calc(100% - 36px);max-width:1100px;display:grid;gap:16px}
+.tb-list li{display:flex;align-items:center;gap:14px;color:#fff;font-weight:700;font-size:1.05rem;line-height:1.35}
+.tb-list svg{flex:none;width:24px;height:24px}
+.tb-list svg circle{fill:#fff}
+.tb-list svg path{stroke:#3663be}
+@media(min-width:800px){.tb-list{grid-template-columns:repeat(3,auto);justify-content:space-between;gap:24px}.tb-list li{font-size:1.1rem}}
+.quotesec{padding-bottom:28px!important}
+@media(max-width:480px){.tb-list li{font-size:.98rem}}
