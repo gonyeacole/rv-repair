@@ -1700,3 +1700,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .quote-card select:invalid{color:#0d1b35!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:2px}
 .quotesec .qc-sub{color:#0d1b35!important}
+
+/* Hero: road photo with plain black tint */
+.hero{background:#000 url("assets/hero-road-desktop.jpg") 0% 62%/135% auto no-repeat!important}
+.hero::after{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.5))!important}
+@media(max-width:700px){.hero{background-image:url("assets/hero-road-mobile.jpg")!important;background-position:50% 100%;background-size:cover!important}.hero::after{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.55) 60%,rgba(0,0,0,.45))!important}}
