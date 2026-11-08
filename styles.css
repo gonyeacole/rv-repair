@@ -1725,3 +1725,7 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
   .menu a:last-child{border-bottom:0!important}
   .hd-phone{font-size:1.1rem}
 }
+
+/* Form card: equal space above and below */
+.quotesec .form-msg:empty{display:none}
+.quotesec .quote-card{padding-top:26px!important;padding-bottom:26px!important}
