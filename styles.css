@@ -1699,3 +1699,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .quote-card input::placeholder,.quotesec .quote-card textarea::placeholder{color:#0d1b35!important;opacity:1}
 .quotesec .quote-card select:invalid{color:#0d1b35!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:2px}
+.quotesec .qc-sub{color:#0d1b35!important}
