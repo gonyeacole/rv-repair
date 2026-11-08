@@ -1700,3 +1700,16 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .quote-card select:invalid{color:#0d1b35!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:2px}
 .quotesec .qc-sub{color:#0d1b35!important}
+
+/* Phone layout: big logo left, phone number and plain menu icon right, no top phone strip */
+.hd-phone{display:none}
+@media(max-width:980px){
+  .ph-strip{display:none!important}
+  .hd-main{padding-top:10px!important;padding-bottom:10px!important;gap:10px!important}
+  .hd-main .brand img{height:64px}
+  .hd-phone{display:inline-flex;align-items:center;gap:7px;margin-left:auto;color:#fff;font-weight:700;font-size:1rem;white-space:nowrap}
+  .hd-phone svg{color:#d21f39;flex:none}
+  .hd-main .burger{width:40px;height:44px;background:transparent!important;border:0!important;border-radius:0;margin:0}
+  .hd-main .burger span{background:#fff!important;width:26px;height:3px;margin:3px auto}
+}
+@media(max-width:360px){.hd-phone{font-size:.9rem}.hd-phone svg{display:none}}
