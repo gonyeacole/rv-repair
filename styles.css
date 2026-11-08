@@ -1681,3 +1681,11 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .qc-submit{width:100%;height:56px;padding:0 20px!important;color:#fff!important;text-transform:uppercase;letter-spacing:.2em;font-weight:600;font-size:.95rem}
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{background:#fff!important;border:1.5px solid #c9d2e6!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:1px}
+
+/* Consultation-style form wording */
+.quotesec .qc-eyebrow{margin:0 0 8px;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#d21f39;text-align:center}
+.quotesec .quote-card select{width:100%;height:50px;padding:0 44px 0 14px;border-radius:5px;font:inherit;font-size:1rem;color:#0d1b35;text-align:left;appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230d1b35' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 16px center!important}
+.quotesec .quote-card select:invalid{color:#6b7a99}
+.quotesec .qc-note{margin:2px 0 0;font-size:.9rem;text-align:center;color:#4a5a80}
+.quotesec .qc-fine a{color:#0d1b35;text-decoration:underline}
+.quotesec .qc-submit{letter-spacing:.16em}

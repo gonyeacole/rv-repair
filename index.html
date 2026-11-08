@@ -330,16 +330,25 @@
 <section class="quotesec">
   <div class="container">
     <form class="quote-card" id="quote" novalidate>
-      <h2>Need an RV repaired?<br>Tell us what is going on.</h2>
-      <p class="qc-sub">Fill out the form to request a free quote.</p>
-      <p class="qc-sub">Fields marked with an * are required</p>
-      <label><span class="sr">Name</span><input name="name" type="text" placeholder="Name *" autocomplete="name" required></label>
-      <label><span class="sr">Email</span><input name="email" type="email" placeholder="Email" autocomplete="email"></label>
-      <label><span class="sr">Phone</span><input name="phone" type="tel" placeholder="Phone *" autocomplete="tel" required></label>
-      <label><span class="sr">Address</span><input name="address" type="text" placeholder="Address * (where is your RV parked?)" autocomplete="street-address" required></label>
-      <label><span class="sr">Message</span><textarea name="details" rows="4" placeholder="Message * (what is going on with your RV?)" required></textarea></label>
-      <p class="qc-fine">By clicking Submit, you agree to be contacted about your request. We never share your information.</p>
-      <button class="qc-submit" type="submit">Submit</button>
+      <p class="qc-eyebrow">Schedule a consultation</p>
+      <h2>Get your free consultation</h2>
+      <p class="qc-sub">Tell us which service you need and we'll be in touch within 24 hours.</p>
+      <label><span class="sr">Your name</span><input name="name" type="text" placeholder="Your Name" autocomplete="name" required></label>
+      <label><span class="sr">Phone number</span><input name="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required></label>
+      <label><span class="sr">Address</span><input name="address" type="text" placeholder="Address" autocomplete="street-address" required></label>
+      <label><span class="sr">What can we help with?</span><select name="service" required>
+        <option value="" selected disabled>What can we help with?</option>
+        <option>Repair &amp; Diagnostics</option>
+        <option>Appliance &amp; Electrical</option>
+        <option>Plumbing</option>
+        <option>Roof &amp; Structural</option>
+        <option>Seasonal Maintenance</option>
+        <option>Emergency Help</option>
+        <option>Something else</option>
+      </select></label>
+      <button class="qc-submit" type="submit">Schedule a consultation</button>
+      <p class="qc-note">No obligation &middot; We'll reach out within 24 hours</p>
+      <p class="qc-fine">By submitting this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
       <p class="form-msg" role="status" aria-live="polite"></p>
     </form>
   </div>

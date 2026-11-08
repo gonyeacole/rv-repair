@@ -33,14 +33,14 @@ const msg = form.querySelector(".form-msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
-  if (!d.name || !d.phone || !d.address || !d.details) {
-    msg.textContent = "Please fill in your name, phone, address and a short message.";
+  if (!d.name || !d.phone || !d.address || !d.service) {
+    msg.textContent = "Please fill in your name, phone, address and what we can help with.";
     msg.className = "form-msg err";
     return;
   }
   const name = d.name;
   const body = [
-    `Name: ${name}`, `Phone: ${d.phone}`, `Email: ${d.email || "-"}`, `Address: ${d.address}`, "", d.details,
+    `Name: ${name}`, `Phone: ${d.phone}`, `Address: ${d.address}`, `Service: ${d.service}`,
   ].join("\n");
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request from " + name)}&body=${encodeURIComponent(body)}`;
   msg.textContent = "Thanks! Your email app should open with your request. You can also call us.";
