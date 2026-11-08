@@ -1661,7 +1661,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 @media(max-width:980px){.hd-main .brand img{height:56px}}
 .doc-head .brand img{height:56px;width:auto}
 .util a,.trust,.trust>div,.trust span,.callblock small,.hd-main .brand{color:#e6eefc}
-.hd-btn,.hd-btn:hover{color:#0d1b35!important}
+.hd-btn.btn-outline,.hd-btn.btn-outline:hover{color:#0d1b35!important}
+.hd-btn.btn-primary,.hd-btn.btn-primary:hover{color:#fff!important}
 .hd-main .t-ic{background:#962d29;color:#fff}
 .hd-main .hd-quote,.hd-main .hd-quote:hover{color:#fff!important}
 .doc-head .container{padding-block:10px}
