@@ -1791,3 +1791,6 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 @media(min-width:800px){.tb-list{grid-template-columns:repeat(3,auto);justify-content:space-between;gap:24px}.tb-list li{font-size:1.1rem}}
 .quotesec{padding-bottom:28px!important}
 @media(max-width:480px){.tb-list li{font-size:.98rem}}
+
+/* Phone: form card in dark blue */
+@media(max-width:700px){.quotesec .quote-card{background:#0d1b35!important}}
