@@ -1811,3 +1811,11 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .hero .quotesec.qs-in .quote-card{margin:0;width:100%}
 .hero-grid{display:grid;gap:36px}
 @media(min-width:981px){.hero-grid{grid-template-columns:minmax(0,1fr) 460px!important;gap:56px;align-items:center!important}}
+
+/* Form card: white background, navy text and outlines */
+.quotesec .quote-card,.hero .quotesec.qs-in .quote-card{background:#fff!important}
+@media(max-width:700px){.quotesec .quote-card{background:#fff!important}}
+.quotesec .quote-card h2,.quotesec .qc-sub,.quotesec .qc-fine,.quotesec .qc-fine a,.quotesec .form-msg{color:#0d1b35!important}
+.quotesec .form-msg.err{color:#b01a30!important}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#0d1b35!important}
+.quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#0d1b35}
