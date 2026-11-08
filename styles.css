@@ -1690,3 +1690,12 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .qc-fine a{color:#0d1b35;text-decoration:underline}
 .quotesec .qc-submit{letter-spacing:.16em}
 .quotesec .quote-card h2{text-transform:uppercase!important;letter-spacing:.02em!important;font-size:1.6rem!important}
+
+/* All form fields match: navy outline and navy text */
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{background-color:#fff!important;border:1.5px solid #0d1b35!important;border-radius:5px!important;color:#0d1b35!important;font:400 1rem/1.4 inherit;font-family:inherit!important;font-size:1rem!important;padding:0 14px;text-align:left}
+.quotesec .quote-card input,.quotesec .quote-card select{height:50px}
+.quotesec .quote-card textarea{padding:13px 14px;min-height:110px}
+.quotesec .quote-card select{padding-right:44px}
+.quotesec .quote-card input::placeholder,.quotesec .quote-card textarea::placeholder{color:#0d1b35!important;opacity:1}
+.quotesec .quote-card select:invalid{color:#0d1b35!important}
+.quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{border-color:#0d1b35!important;outline:2px solid #0d1b35;outline-offset:2px}
