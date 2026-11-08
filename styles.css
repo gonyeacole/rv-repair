@@ -1742,3 +1742,10 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .hero{background:#000 url("assets/hero-aerial-desktop.jpg") center/cover no-repeat!important}
 .hero::after{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.7) 55%,rgba(0,0,0,.78))!important}
 @media(max-width:700px){.hero{background-image:url("assets/hero-aerial-mobile.jpg")!important;background-position:50% 50%}.hero::after{background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.72))!important}}
+
+/* Quote form on the lighter blue */
+.quotesec .quote-card{background:#3663be!important;border:0!important}
+.quotesec .quote-card h2,.quotesec .qc-sub,.quotesec .qc-fine,.quotesec .qc-fine a,.quotesec .form-msg{color:#fff!important}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#fff!important}
+.quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#fff}
+.quotesec .form-msg.err{color:#ffd9de!important}
