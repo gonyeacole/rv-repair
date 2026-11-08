@@ -1819,3 +1819,9 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .form-msg.err{color:#b01a30!important}
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#0d1b35!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#0d1b35}
+
+/* Trust bar: three checks */
+.tb-list{grid-template-columns:1fr!important;max-width:1100px}
+.tb-list li{font-size:1.05rem;align-items:center}
+.tb-list svg{width:24px;height:24px;margin-top:0}
+@media(min-width:800px){.tb-list{grid-template-columns:repeat(3,auto)!important;justify-content:space-between!important;gap:24px!important}.tb-list li{font-size:1.1rem}}
