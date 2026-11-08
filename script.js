@@ -33,12 +33,12 @@ const msg = form.querySelector(".form-msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
-  if (!d.first || !d.phone || !d.address || !d.details) {
-    msg.textContent = "Please fill in your first name, phone, address and a short message.";
+  if (!d.name || !d.phone || !d.address || !d.details) {
+    msg.textContent = "Please fill in your name, phone, address and a short message.";
     msg.className = "form-msg err";
     return;
   }
-  const name = [d.first, d.last].filter(Boolean).join(" ");
+  const name = d.name;
   const body = [
     `Name: ${name}`, `Phone: ${d.phone}`, `Email: ${d.email || "-"}`, `Address: ${d.address}`, "", d.details,
   ].join("\n");
