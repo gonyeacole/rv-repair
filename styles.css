@@ -1732,3 +1732,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 /* Form card: equal space above and below */
 .quotesec .form-msg:empty{display:none}
 .quotesec .quote-card{padding-top:26px!important;padding-bottom:26px!important}
+
+/* Hero photo: plain black tint */
+.hero{background-color:#000!important}
+.hero::after{background:linear-gradient(rgba(0,0,0,.84),rgba(0,0,0,.76) 55%,rgba(0,0,0,.84))!important}
+@media(max-width:700px){.hero::after{background:linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.8))!important}}
