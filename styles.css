@@ -1763,3 +1763,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .sl-more:hover{color:#d21f39}
 @media(min-width:700px){.sl-row{gap:28px;padding:36px 0}.sl-ic{width:64px;height:64px}.sl-tx h3{font-size:1.6rem}.sl-tx p{font-size:1.05rem;max-width:62ch}}
 .svc6.sl{background:#fff!important}
+
+/* Form card straddles the hero and one continuous white area below it */
+.quotesec{background:#fff!important;padding-bottom:0!important}
+.svc6.sl{padding-top:64px!important}
+.quotesec .quote-card{box-shadow:0 12px 30px rgba(8,16,34,.22)!important}
