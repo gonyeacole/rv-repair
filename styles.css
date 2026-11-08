@@ -1773,3 +1773,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .svc6.sl .svc-head{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .svc6.sl{padding-top:40px!important}
 .svc6.sl .sl-row:first-child{border-top:0}
+.quotesec .quote-card,.quotesec .quote-card:focus-within{box-shadow:none!important}
