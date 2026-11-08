@@ -1689,3 +1689,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .qc-note{margin:2px 0 0;font-size:.9rem;text-align:center;color:#4a5a80}
 .quotesec .qc-fine a{color:#0d1b35;text-decoration:underline}
 .quotesec .qc-submit{letter-spacing:.16em}
+.quotesec .quote-card h2{text-transform:uppercase!important;letter-spacing:.02em!important;font-size:1.6rem!important}
