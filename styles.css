@@ -1749,3 +1749,16 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-color:#fff!important}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#fff}
 .quotesec .form-msg.err{color:#ffd9de!important}
+
+/* Services as a list: red icon, bold title, text, link */
+.sl .sl-list{width:calc(100% - 36px);max-width:900px;margin-inline:auto;padding:14px 0 0!important;display:block!important}
+.sl-row{display:flex;gap:18px;align-items:flex-start;padding:28px 0;border-top:1px solid #c9d2e6}
+.sl-row:last-child{border-bottom:1px solid #c9d2e6}
+.sl-ic{flex:none;width:56px;height:56px;border-radius:6px;background:#d21f39;color:#fff;display:grid;place-items:center}
+.sl-ic svg{width:28px;height:28px;stroke:#fff!important;stroke-width:1.9}
+.sl-tx{min-width:0;display:grid;gap:10px}
+.sl-tx h3{font-family:Montserrat,Inter,system-ui,sans-serif;font-weight:700;font-size:1.35rem;line-height:1.2;color:#0d1b35;margin:0}
+.sl-tx p{margin:0;font-size:1rem;line-height:1.65;color:#1f2d4d}
+.sl-more{justify-self:start;margin-top:4px;font-size:.85rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0d1b35}
+.sl-more:hover{color:#d21f39}
+@media(min-width:700px){.sl-row{gap:28px;padding:36px 0}.sl-ic{width:64px;height:64px}.sl-tx h3{font-size:1.6rem}.sl-tx p{font-size:1.05rem;max-width:62ch}}
