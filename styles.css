@@ -1966,3 +1966,6 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:"Poppins",Inter,system-ui,sans-serif}
 .hero .lead{font-weight:600!important}
 .hwk-h{margin-bottom:44px!important}
+/* Sub text: always exactly two lines */
+.hwk-step p{white-space:nowrap;max-width:none}
+@media(max-width:360px){.hwk-step p{font-size:.68rem;letter-spacing:.04em}}
