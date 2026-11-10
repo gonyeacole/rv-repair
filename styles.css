@@ -1942,3 +1942,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hwk-step p{margin:0;font-size:.98rem;line-height:1.45;color:#484848;max-width:20ch}
 @media(min-width:760px){.hwk{padding:80px 0 84px!important}.hwk-h{font-size:2.4rem!important;max-width:none}.hwk-grid{grid-template-columns:repeat(4,1fr);gap:24px}.hwk-ic{width:130px;height:130px}.hwk-step h3{font-size:1.35rem!important}}
 .hwk-step{align-content:start}
+.hwk-step p{text-wrap:balance}
