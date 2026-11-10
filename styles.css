@@ -1996,3 +1996,12 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .sa-body p{margin:0;font-family:"Poppins",Inter,system-ui,sans-serif;font-size:.98rem;line-height:1.65;color:#3a3a30}
 .sa-link{justify-self:start;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2c4314;text-decoration:underline;text-underline-offset:4px}
 @media(min-width:700px){.sa summary{font-size:1.05rem;padding:26px 34px}.sa-body{padding:0 34px 28px}}
+/* Services: tan background, brown text */
+.svc6.sa-sec{background:#f1ede3!important}
+.sa-sec .sc-h{color:#3d2512!important}
+.sa{background:#faf7ee;border-color:#ddd2bb}
+.sa summary{color:#3d2512}
+.sa summary::after{border-color:#3d2512}
+.sa summary:focus-visible{outline-color:#3d2512}
+.sa-body p{color:#4f3a24}
+.sa-link{color:#3d2512}
