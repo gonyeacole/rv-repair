@@ -2023,12 +2023,14 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 /* Phone: brown band behind the form */
 @media(max-width:700px){.hero .quotesec.qs-in{background:#3d2512!important}}
 
-/* Form without the white card: text sits on the brown band / photo */
-.quotesec .quote-card,.hero .quotesec.qs-in .quote-card{background:transparent!important;box-shadow:none!important;border:0!important}
+/* Phone only: form without the white card, light text on the brown band */
+@media(max-width:700px){
+.quotesec .quote-card,.hero .quotesec.qs-in .quote-card{background:transparent!important;box-shadow:none!important;border:0!important;padding:0!important}
 .quotesec .quote-card h2,.quotesec .qc-sub,.quotesec .qc-fine,.quotesec .qc-fine a,.quotesec .form-msg,.quotesec .quote-card label{color:#fff!important}
 .quotesec .form-msg.err{color:#ffd2bf!important}
 .qc-steps i{background:rgba(255,255,255,.3)}
 .qc-steps i.on{background:#eb5b2f}
 .quotesec .qc-back{color:#fff}
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#fff}
-@media(max-width:700px){.hero .quotesec.qs-in{padding:28px 20px 36px!important}.hero .quotesec.qs-in .quote-card{padding:0!important}}
+.hero .quotesec.qs-in{padding:28px 20px 36px!important}
+}
