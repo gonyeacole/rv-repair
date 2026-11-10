@@ -1927,3 +1927,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hero .lead{font-weight:700!important}
 /* Phone hero: content sits at the bottom of the photo with even space under the buttons */
 @media(max-width:700px){.hero-copy{justify-content:flex-end!important;padding-bottom:44px!important;padding-top:120px!important}}
+@media(max-width:700px){.hero-copy{min-height:0!important;padding-top:150px!important;justify-content:flex-start!important}}
