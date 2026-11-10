@@ -1957,3 +1957,11 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @media(min-width:760px){.hwk-grid{gap:24px!important}}
 /* Hero text pure white (buttons keep their own colors) */
 .hero h1,.hero h1 .h1-acc,.hero .lead,.hero-checks li{color:#fff!important}
+
+/* Poppins for paragraph text (self-hosted) */
+@font-face{font-family:"Poppins";src:url("assets/fonts/Poppins-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("assets/fonts/Poppins-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("assets/fonts/Poppins-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("assets/fonts/Poppins-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:"Poppins",Inter,system-ui,sans-serif}
+.hero .lead{font-weight:600!important}
