@@ -30,11 +30,38 @@ menu.addEventListener("click", (e) => {
 // Swap for a form service (Formspree, Netlify Forms, etc.) to receive submissions directly.
 const form = document.getElementById("quote");
 const msg = form.querySelector(".form-msg");
+const s1 = document.getElementById("qc-s1");
+const s2 = document.getElementById("qc-s2");
+const dots = form.querySelectorAll(".qc-steps i");
+const sub = document.getElementById("qc-sub");
+function showStep(n) {
+  s1.hidden = n !== 1;
+  s2.hidden = n !== 2;
+  dots[1].className = n === 2 ? "on" : "";
+  sub.textContent = n === 1 ? "Tell us how to reach you." : "Now tell us about your RV.";
+  msg.textContent = "";
+  msg.className = "form-msg";
+  const first = (n === 1 ? s1 : s2).querySelector("input,select");
+  if (first) first.focus({ preventScroll: true });
+}
+document.getElementById("qc-next").addEventListener("click", () => {
+  const name = form.elements.name.value.trim();
+  const phone = form.elements.phone.value.trim();
+  if (!name || !phone) {
+    msg.textContent = "Please enter your name and phone number.";
+    msg.className = "form-msg err";
+    (name ? form.elements.phone : form.elements.name).focus();
+    return;
+  }
+  showStep(2);
+});
+document.getElementById("qc-back").addEventListener("click", () => showStep(1));
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
-  if (!d.name || !d.phone || !d.address || !d.service) {
-    msg.textContent = "Please fill in your name, phone, address and what we can help with.";
+  if (!d.name || !d.phone) { showStep(1); msg.textContent = "Please enter your name and phone number."; msg.className = "form-msg err"; return; }
+  if (!d.address || !d.service) {
+    msg.textContent = "Please choose a service and tell us where your RV is parked.";
     msg.className = "form-msg err";
     return;
   }
@@ -43,7 +70,7 @@ form.addEventListener("submit", (e) => {
     `Name: ${name}`, `Phone: ${d.phone}`, `Address: ${d.address}`, `Service: ${d.service}`, "", d.details || "",
   ].join("\n");
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request from " + name)}&body=${encodeURIComponent(body)}`;
-  msg.textContent = "Thanks! Your email app should open with your request. You can also call us.";
+  msg.textContent = "Thanks! Your email app should open with your request. You can also call us at " + CONFIG.phoneDisplay + ".";
   msg.className = "form-msg ok";
 });
 

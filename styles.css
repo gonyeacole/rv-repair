@@ -2010,3 +2010,13 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .pp-h{color:#fff!important}
 .pp-h{white-space:nowrap}
 @media(max-width:699px){.pp-h{font-size:clamp(1.25rem,6.1vw,1.9rem)!important}}
+
+/* Two-step form: labels above fields, progress bars, back link */
+.quotesec .quote-card .qc-step{display:grid;gap:14px}
+.quotesec .quote-card .qc-step[hidden]{display:none!important}
+.quotesec .quote-card label{display:grid;gap:6px;text-align:left;font-size:.82rem;font-weight:600;color:#2c4314}
+.quotesec .quote-card textarea{min-height:84px}
+.qc-steps{display:flex;justify-content:center;gap:8px;margin:2px 0 4px}
+.qc-steps i{display:block;width:38px;height:5px;border-radius:3px;background:#d7d2bf}
+.qc-steps i.on{background:#eb5b2f}
+.quotesec .qc-back{background:none;border:0;color:#2c4314;font:600 .85rem "Poppins",Inter,sans-serif;text-decoration:underline;text-underline-offset:4px;cursor:pointer;justify-self:center;padding:4px}

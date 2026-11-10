@@ -333,22 +333,29 @@
     <div class="quotesec qs-in">
       <form class="quote-card" id="quote" novalidate>
       <h2>Need an RV repaired?<br>Free estimates.</h2>
-      <p class="qc-sub">Tell us which service you need and we'll be in touch within 24 hours.</p>
-      <label><span class="sr">Your name</span><input name="name" type="text" placeholder="Your Name" autocomplete="name" required></label>
-      <label><span class="sr">Phone number</span><input name="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required></label>
-      <label><span class="sr">Address</span><input name="address" type="text" placeholder="Address" autocomplete="street-address" required></label>
-      <label><span class="sr">What can we help with?</span><select name="service" required>
-        <option value="" selected disabled>What can we help with?</option>
-        <option>Repair &amp; Diagnostics</option>
-        <option>Appliance &amp; Electrical</option>
-        <option>Plumbing</option>
-        <option>Roof &amp; Structural</option>
-        <option>Seasonal Maintenance</option>
-        <option>Emergency Help</option>
-        <option>Something else</option>
-      </select></label>
-      <label><span class="sr">Describe your issue</span><textarea name="details" rows="4" placeholder="Describe your issue"></textarea></label>
-      <button class="qc-submit" type="submit">Get free estimate</button>
+      <div class="qc-steps" aria-hidden="true"><i class="on"></i><i></i></div>
+      <p class="qc-sub" id="qc-sub">Tell us how to reach you.</p>
+      <div class="qc-step" id="qc-s1">
+        <label>Your name<input name="name" type="text" placeholder="Jane Smith" autocomplete="name" required></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="tel" placeholder="(715) 555-0123" autocomplete="tel" required></label>
+        <button class="qc-submit" type="button" id="qc-next">Next</button>
+      </div>
+      <div class="qc-step" id="qc-s2" hidden>
+        <label>What can we help with?<select name="service" required>
+          <option value="" selected disabled>Choose one</option>
+          <option>Repair &amp; Diagnostics</option>
+          <option>Appliance &amp; Electrical</option>
+          <option>Plumbing</option>
+          <option>Roof &amp; Structural</option>
+          <option>Seasonal Maintenance</option>
+          <option>Emergency Help</option>
+          <option>Something else</option>
+        </select></label>
+        <label>Where is your RV parked?<input name="address" type="text" placeholder="Address or campground" autocomplete="street-address" required></label>
+        <label>Anything else? (optional)<textarea name="details" rows="3" placeholder="What's going on?"></textarea></label>
+        <button class="qc-submit" type="submit">Get free estimate</button>
+        <button class="qc-back" type="button" id="qc-back">&larr; Back</button>
+      </div>
       <p class="qc-fine">By submitting this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
       <p class="form-msg" role="status" aria-live="polite"></p>
     </form>
