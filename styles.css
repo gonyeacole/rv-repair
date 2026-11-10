@@ -2080,3 +2080,18 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 }
 /* Button text in Poppins */
 .hb,.hb *,.qc-submit,.qc-back,.pp-btn,.slant-btn,.slant-btn span,.btn,.hd-btn,.hd-quote,.sa-link,.menu-toggle{font-family:"Poppins",Inter,system-ui,sans-serif!important}
+
+/* Form is its own section again, between the hero and Services */
+.hero-grid{grid-template-columns:1fr!important}
+.quotesec{background:#f1ede3!important;padding:0 0 36px!important;display:flow-root}
+.quotesec .container{position:relative;z-index:3}
+@media(min-width:701px){
+  .hero{padding-bottom:150px!important}
+  .quotesec .container{margin-top:-110px;width:calc(100% - 32px);max-width:680px}
+}
+@media(max-width:700px){
+  .hero{padding-bottom:0!important}
+  .quotesec{padding:0 0 36px!important}
+  .quotesec .container{width:min(320px,calc(100% - 32px))!important;max-width:none;margin:-64px auto 0!important;padding:0!important}
+  .quotesec .quote-card{background:#3d2512!important;border-radius:28px!important;padding:32px 20px 28px!important;box-shadow:0 14px 34px rgba(0,0,0,.4)!important}
+}
