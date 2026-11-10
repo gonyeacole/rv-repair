@@ -1944,3 +1944,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hwk-step{align-content:start}
 .hwk-step p{text-wrap:balance}
 .hwk-step p{text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;font-weight:600;line-height:1.5;max-width:22ch}
+.hwk-grid{gap:48px 16px!important}
