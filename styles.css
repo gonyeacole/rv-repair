@@ -2060,3 +2060,9 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .quotesec .quote-card label{padding-left:0!important;text-indent:14px}
   .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{text-indent:0}
 }
+
+/* Phone: brown panel with rounded top corners rises over the bottom of the photo */
+@media(max-width:700px){
+  .hero-copy{padding-bottom:100px!important}
+  .hero .quotesec.qs-in{margin-top:-64px!important;padding-top:36px!important;background:#3d2512!important;border-radius:28px 28px 0 0;box-shadow:0 -12px 28px rgba(0,0,0,.4)}
+}
