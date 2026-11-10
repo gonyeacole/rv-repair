@@ -2034,3 +2034,16 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .quotesec .quote-card input:focus,.quotesec .quote-card select:focus,.quotesec .quote-card textarea:focus{outline-color:#fff}
 .hero .quotesec.qs-in{padding:28px 20px 36px!important}
 }
+
+/* Phone: every button and field matches the pill hero buttons */
+@media(max-width:700px){
+  .qc-submit,.quotesec .qc-submit,.pp-btn,a.pp-btn,.slant-btn{height:58px;border-radius:999px!important;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 6px 16px rgba(0,0,0,.25);padding:0 28px!important}
+  .qc-submit,.quotesec .qc-submit{width:100%;background:#eb5b2f!important;color:#1b1a1a!important}
+  .pp-btn,a.pp-btn{background:#f3f1e8!important;color:#1b1a1a!important;width:min(100%,320px)}
+  .slant-btn{background:#eb5b2f!important;color:#1b1a1a!important;width:100%;max-width:320px;justify-content:center}
+  .slant-btn svg{display:none}
+  .quotesec .quote-card input,.quotesec .quote-card select{height:58px!important;border-radius:999px!important;padding-left:24px!important;padding-right:24px!important}
+  .quotesec .quote-card select{padding-right:52px!important;background-position:right 22px center!important}
+  .quotesec .quote-card textarea{border-radius:28px!important;padding:16px 24px!important}
+  .quotesec .quote-card label{padding-left:12px}
+}
