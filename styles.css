@@ -1840,6 +1840,19 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .svc6.sl .sl-list{padding-top:20px!important}
 .svc6.sl .sl-row:first-child{border-top:1px solid #c9d2e6}
 
+/* Headlines in TAY Watkins */
+@font-face{font-family:"TAY Watkins";src:url("assets/fonts/TAYWatkins.woff") format("woff"),url("assets/fonts/TAYWatkins.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{font-family:"TAY Watkins",Montserrat,Inter,system-ui,sans-serif!important;font-weight:400!important;letter-spacing:.01em!important;font-synthesis:none}
+/* Watkins is wide and all caps, so headlines get smaller sizes */
+.hero h1{font-size:clamp(1.9rem,6.4vw,2.2rem)!important;line-height:1.12!important;letter-spacing:0!important}
+@media(min-width:981px){.hero h1{font-size:2.9rem!important}}
+.quote-card h2,.quotesec .quote-card h2{font-size:1.3rem!important;line-height:1.2!important;letter-spacing:.02em!important}
+.title,.svc6.sl .svc-head .title{font-size:1.6rem!important;line-height:1.15!important;letter-spacing:.01em!important}
+@media(min-width:700px){.title,.svc6.sl .svc-head .title{font-size:2.2rem!important}}
+.sl-tx h3{font-size:1.15rem!important;letter-spacing:.02em!important}
+@media(min-width:700px){.sl-tx h3{font-size:1.4rem!important}}
+.pp-h{font-size:1.9rem!important;letter-spacing:.01em!important}
+@media(min-width:700px){.pp-h{font-size:2.6rem!important}}
 /* Phone hero: full-screen photo, centered headline, pill buttons; form sits below on light blue */
 @media(max-width:700px){
   .hero{background:#fff!important;padding:0!important;min-height:0!important;overflow:hidden}
@@ -1850,8 +1863,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
   .hero-copy::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.76)),url("assets/hero-aerial-mobile.jpg") 50% 50%/cover no-repeat}
   .hero-copy>*{text-align:center}
   .hero-stars{justify-content:center}
-  .hero h1{font-size:clamp(1.55rem,6.8vw,2rem)!important;line-height:1.05!important;margin:10px 0 18px!important;text-transform:none}
-  .hero h1 .h1-acc{display:block;color:#9db7ee}
+  .hero h1{font-size:clamp(1.4rem,6.2vw,1.8rem)!important;line-height:1.15!important;text-wrap:balance;margin:10px 0 18px!important;text-transform:none}
+  .hero h1 .h1-acc{display:block;color:#9db7ee;text-wrap:balance;margin-top:6px}
   .hero .lead{font-size:1.05rem;line-height:1.55;margin:0 0 20px!important;max-width:34ch}
   .hero-checks{display:grid;justify-items:start;gap:8px;margin:0 auto 24px!important}
   .hero-btns2{display:grid;gap:12px;width:100%;max-width:300px}
