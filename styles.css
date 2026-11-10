@@ -1955,3 +1955,17 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @media(min-width:760px){.hwk-tr-m{display:none}.hwk-tr-d{display:block}}
 .hwk-grid{gap:44px 16px!important}
 @media(min-width:760px){.hwk-grid{gap:24px!important}}
+
+/* Services as big picture cards on yellow */
+.svc6.sc{background:#fcef6f!important;padding:56px 0 64px!important;margin:0!important;border:0!important}
+.sc .sc-in{width:calc(100% - 36px);max-width:1100px;margin-inline:auto;display:grid;gap:34px}
+.sc-h{font-size:clamp(2.4rem,12.5vw,3.6rem)!important;line-height:1!important;color:#1b1a1a!important;text-align:center!important;margin:0!important;text-transform:uppercase}
+.sc-grid{display:grid;grid-template-columns:1fr;gap:22px}
+.sc-card{background:#f3f1e8;border:1px solid rgba(27,26,26,.1);border-radius:22px;overflow:hidden;display:grid;align-content:start}
+.sc-img{height:230px;background:#2c4314;color:#f3f1e8;display:grid;place-items:center}
+.sc-img svg{width:84px;height:84px;stroke-width:1.5}
+.sc-card h3{font-size:1.2rem!important;line-height:1.2!important;letter-spacing:.03em!important;color:#1b1a1a!important;text-align:center!important;margin:0!important;padding:24px 16px 26px!important;text-transform:uppercase}
+@media(min-width:700px){.sc-grid{grid-template-columns:1fr 1fr;gap:24px}.svc6.sc{padding:84px 0 92px!important}}
+@media(min-width:1000px){.sc-grid{grid-template-columns:repeat(3,1fr)}}
+.sc-h{font-size:clamp(1.9rem,8.4vw,3.6rem)!important;white-space:nowrap}
+.sc-img svg{width:112px;height:112px}
