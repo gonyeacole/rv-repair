@@ -2005,3 +2005,8 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .sa summary:focus-visible{outline-color:#3d2512}
 .sa-body p{color:#4f3a24}
 .sa-link{color:#3d2512}
+/* Banner: orange background */
+.pricing.pp{background:#eb5b2f!important}
+.pp-h{color:#fff!important}
+.pp-h{white-space:nowrap}
+@media(max-width:699px){.pp-h{font-size:clamp(1.25rem,6.1vw,1.9rem)!important}}
