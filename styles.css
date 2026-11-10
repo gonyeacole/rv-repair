@@ -1965,3 +1965,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @font-face{font-family:"Poppins";src:url("assets/fonts/Poppins-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
 p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:"Poppins",Inter,system-ui,sans-serif}
 .hero .lead{font-weight:600!important}
+.hwk-h{margin-bottom:44px!important}
