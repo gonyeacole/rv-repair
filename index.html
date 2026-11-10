@@ -333,14 +333,10 @@
     <div class="quotesec qs-in">
       <form class="quote-card" id="quote" novalidate>
       <h2>Need an RV repaired?<br>Free estimates.</h2>
-      <div class="qc-steps" aria-hidden="true"><i class="on"></i><i></i></div>
-      <p class="qc-sub" id="qc-sub">Tell us how to reach you.</p>
-      <div class="qc-step" id="qc-s1">
+      <p class="qc-sub">Takes about 30 seconds.</p>
+      <div class="qc-step" id="qc-main">
         <label>Your name<input name="name" type="text" placeholder="Jane Smith" autocomplete="name" required></label>
         <label>Phone number<input name="phone" type="tel" inputmode="tel" placeholder="(715) 555-0123" autocomplete="tel" required></label>
-        <button class="qc-submit" type="button" id="qc-next">Next</button>
-      </div>
-      <div class="qc-step" id="qc-s2" hidden>
         <label>What can we help with?<select name="service" required>
           <option value="" selected disabled>Choose one</option>
           <option>Repair &amp; Diagnostics</option>
@@ -351,12 +347,14 @@
           <option>Emergency Help</option>
           <option>Something else</option>
         </select></label>
-        <label>Where is your RV parked?<input name="address" type="text" placeholder="Address or campground" autocomplete="street-address" required></label>
-        <label>Anything else? (optional)<textarea name="details" rows="3" placeholder="What's going on?"></textarea></label>
+        <div class="qc-step" id="qc-extra" hidden>
+          <label>Where is your RV parked?<input name="address" type="text" placeholder="Address or campground" autocomplete="street-address"></label>
+          <label>Anything else?<textarea name="details" rows="3" placeholder="What's going on?"></textarea></label>
+        </div>
+        <button class="qc-back" type="button" id="qc-more" aria-expanded="false" aria-controls="qc-extra">+ Add address or details (optional)</button>
         <button class="qc-submit" type="submit">Get free estimate</button>
-        <button class="qc-back" type="button" id="qc-back">&larr; Back</button>
       </div>
-      <p class="qc-fine">By submitting this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+      <p class="qc-fine">We never share your information. By submitting this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
       <p class="form-msg" role="status" aria-live="polite"></p>
     </form>
     </div>
