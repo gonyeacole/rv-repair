@@ -1911,3 +1911,6 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{font-family:"TAY Watk
   .hd-main .burger{background:#fff!important;box-shadow:none!important;width:46px!important;height:46px!important;border-radius:50%!important}
   .hd-main .burger span{background:#1b1a1a!important;width:20px!important;height:2px!important;margin:2.5px 0!important}
 }
+.hero h1 .h1-acc{display:block;color:#fcef6f}
+@media(max-width:700px){.hero h1{font-size:clamp(2.1rem,10.5vw,2.8rem)!important;line-height:1.1!important}.hero h1 .h1-acc{margin-top:6px}}
+@media(min-width:981px){.hero h1{font-size:3.4rem!important}}
