@@ -2095,3 +2095,9 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .quotesec .container{width:min(320px,calc(100% - 32px))!important;max-width:none;margin:-64px auto 0!important;padding:0!important}
   .quotesec .quote-card{background:#3d2512!important;border-radius:28px!important;padding:32px 20px 28px!important;box-shadow:0 14px 34px rgba(0,0,0,.4)!important}
 }
+/* Phone: no overlap, the form card sits in its own section below the photo */
+@media(max-width:700px){
+  .hero-copy{padding-bottom:56px!important}
+  .quotesec{padding:32px 0 36px!important}
+  .quotesec .container{margin:0 auto!important}
+}
