@@ -1839,3 +1839,23 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 .svc6.sl{padding-top:44px!important}
 .svc6.sl .sl-list{padding-top:20px!important}
 .svc6.sl .sl-row:first-child{border-top:1px solid #c9d2e6}
+
+/* Phone hero: full-screen photo, centered headline, pill buttons; form sits below on light blue */
+@media(max-width:700px){
+  .hero{background:#fff!important;padding:0!important;min-height:0!important;overflow:hidden}
+  .hero::after{display:none!important}
+  .hero .container{width:100%!important;max-width:none!important}
+  .hero-grid{display:block!important}
+  .hero-copy{position:relative;isolation:isolate;min-height:calc(100svh - 160px);display:flex!important;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 22px 44px}
+  .hero-copy::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.76)),url("assets/hero-aerial-mobile.jpg") 50% 50%/cover no-repeat}
+  .hero-copy>*{text-align:center}
+  .hero-stars{justify-content:center}
+  .hero h1{font-size:clamp(1.55rem,6.8vw,2rem)!important;line-height:1.05!important;margin:10px 0 18px!important;text-transform:none}
+  .hero h1 .h1-acc{display:block;color:#9db7ee}
+  .hero .lead{font-size:1.05rem;line-height:1.55;margin:0 0 20px!important;max-width:34ch}
+  .hero-checks{display:grid;justify-items:start;gap:8px;margin:0 auto 24px!important}
+  .hero-btns2{display:grid;gap:12px;width:100%;max-width:300px}
+  .hb{height:56px;border-radius:999px!important;font-size:.95rem;font-weight:700;letter-spacing:.16em;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+  .hb-w{border:0}
+  .hero .quotesec.qs-in{background:#e9effa!important;padding:28px 18px 32px!important}
+}
