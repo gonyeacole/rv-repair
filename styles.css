@@ -1945,3 +1945,11 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hwk-step p{text-wrap:balance}
 .hwk-step p{text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;font-weight:600;line-height:1.5;max-width:22ch}
 .hwk-grid{gap:48px 16px!important}
+
+/* Camping trail linking the steps */
+.hwk-trail{position:relative;width:100%}
+.hwk-tr{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible}
+.hwk-tr path{stroke:#eb5b2f;stroke-width:4;stroke-linecap:round;stroke-dasharray:1 12}
+.hwk-tr-d{display:none}
+.hwk-step{position:relative;z-index:1}
+@media(min-width:760px){.hwk-tr-m{display:none}.hwk-tr-d{display:block}}
