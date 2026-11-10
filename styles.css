@@ -2101,3 +2101,5 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .quotesec{padding:32px 0 36px!important}
   .quotesec .container{margin:0 auto!important}
 }
+/* No shadow on the form card */
+.quotesec .quote-card,.quotesec .quote-card:focus-within{box-shadow:none!important}

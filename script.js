@@ -30,13 +30,6 @@ menu.addEventListener("click", (e) => {
 // Swap for a form service (Formspree, Netlify Forms, etc.) to receive submissions directly.
 const form = document.getElementById("quote");
 const msg = form.querySelector(".form-msg");
-const extra = document.getElementById("qc-extra");
-const more = document.getElementById("qc-more");
-more.addEventListener("click", () => {
-  extra.hidden = !extra.hidden;
-  more.setAttribute("aria-expanded", String(!extra.hidden));
-  more.textContent = extra.hidden ? "+ Add address or details (optional)" : "\u2212 Hide address and details";
-});
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
