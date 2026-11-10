@@ -1955,3 +1955,5 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @media(min-width:760px){.hwk-tr-m{display:none}.hwk-tr-d{display:block}}
 .hwk-grid{gap:44px 16px!important}
 @media(min-width:760px){.hwk-grid{gap:24px!important}}
+/* Hero text pure white (buttons keep their own colors) */
+.hero h1,.hero h1 .h1-acc,.hero .lead,.hero-checks li{color:#fff!important}
