@@ -1936,3 +1936,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
   .hero .quotesec.qs-in{position:relative;z-index:3;margin-top:-72px!important;padding:0 16px 32px!important;background:linear-gradient(to bottom,transparent 72px,#f3f1e8 72px)!important}
   .hero .quotesec.qs-in .quote-card{box-shadow:0 10px 30px rgba(0,0,0,.28)!important}
 }
+/* Phone: form rises higher over the photo */
+@media(max-width:700px){
+  .hero-copy{padding-bottom:196px!important}
+  .hero .quotesec.qs-in{margin-top:-160px!important;background:linear-gradient(to bottom,transparent 160px,#f3f1e8 160px)!important}
+}
