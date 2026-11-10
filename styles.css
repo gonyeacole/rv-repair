@@ -1914,3 +1914,5 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{font-family:"TAY Watk
 .hero h1 .h1-acc{display:block;color:#fcef6f}
 @media(max-width:700px){.hero h1{font-size:clamp(2.1rem,10.5vw,2.8rem)!important;line-height:1.1!important}.hero h1 .h1-acc{margin-top:6px}}
 @media(min-width:981px){.hero h1{font-size:3.4rem!important}}
+/* Watkins has very wide word gaps, so pull the words closer */
+h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!important}
