@@ -2047,3 +2047,6 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .quotesec .quote-card textarea{border-radius:28px!important;padding:16px 24px!important}
   .quotesec .quote-card label{padding-left:12px}
 }
+/* Text inside form fields is black */
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea,.quotesec .quote-card select:invalid{color:#000!important}
+.quotesec .quote-card input::placeholder,.quotesec .quote-card textarea::placeholder{color:#000!important;opacity:1}
