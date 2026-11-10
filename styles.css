@@ -2078,3 +2078,5 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .hero-copy{min-height:0!important;justify-content:flex-start!important;padding-top:120px!important;padding-bottom:76px!important}
   .hero .quotesec.qs-in{margin-top:-64px!important}
 }
+/* Button text in Poppins */
+.hb,.hb *,.qc-submit,.qc-back,.pp-btn,.slant-btn,.slant-btn span,.btn,.hd-btn,.hd-quote,.sa-link,.menu-toggle{font-family:"Poppins",Inter,system-ui,sans-serif!important}
