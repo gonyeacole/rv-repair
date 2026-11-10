@@ -1918,3 +1918,4 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{font-family:"TAY Watk
 h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!important}
 @media(max-width:700px){.hero h1{font-size:clamp(1.8rem,8.6vw,2.3rem)!important}}
 @media(min-width:981px){.hero h1{font-size:3rem!important}}
+@media(max-width:700px){.hero h1{font-size:clamp(2.1rem,10.6vw,3rem)!important;line-height:1.08!important}.hero-copy{padding-left:16px!important;padding-right:16px!important}}
