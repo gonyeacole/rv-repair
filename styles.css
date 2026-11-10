@@ -1953,3 +1953,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hwk-tr-d{display:none}
 .hwk-step{position:relative;z-index:1}
 @media(min-width:760px){.hwk-tr-m{display:none}.hwk-tr-d{display:block}}
+/* Tire tracks instead of dots: two ridged lines with the middle cleared */
+.hwk-tr path.t-tread{stroke:#1b1a1a;stroke-opacity:.5;stroke-width:15;stroke-linecap:butt;stroke-dasharray:2.5 3.5}
+.hwk-tr path.t-gap{stroke:#f3f1e8;stroke-width:8;stroke-linecap:butt;stroke-dasharray:none}
+.hwk-tr path.t-tread{stroke:#3b2c14;stroke-opacity:.72;stroke-width:20;stroke-dasharray:3 3}
+.hwk-tr path.t-gap{stroke-width:12}
