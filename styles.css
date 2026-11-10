@@ -1983,3 +1983,15 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 @media(min-width:1000px){.sc-grid{grid-template-columns:repeat(3,1fr)}}
 .sc-h{font-size:clamp(1.9rem,8.4vw,3.6rem)!important;white-space:nowrap}
 .sc-img svg{width:112px;height:112px}
+
+/* Phone: services in 3 rows by 2 columns */
+@media(max-width:699px){
+  .sc .sc-in{gap:26px}
+  .sc-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
+  .sc-card{border-radius:16px}
+  .sc-img{height:112px!important}
+  .sc-img svg{width:56px!important;height:56px!important}
+  .sc-card h3{font-size:.78rem!important;letter-spacing:.02em!important;padding:14px 8px 16px!important;min-height:3.2em;display:grid;place-items:center;line-height:1.25!important}
+}
+@media(max-width:699px){.sc-card h3{align-content:center}}
+@media(max-width:699px){.sc-card{grid-template-rows:auto 1fr;align-content:stretch}}
