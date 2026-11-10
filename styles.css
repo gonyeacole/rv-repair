@@ -1983,3 +1983,16 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 @media(min-width:1000px){.sc-grid{grid-template-columns:repeat(3,1fr)}}
 .sc-h{font-size:clamp(1.9rem,8.4vw,3.6rem)!important;white-space:nowrap}
 .sc-img svg{width:112px;height:112px}
+
+/* Services as dropdown rows */
+.sa-sec .sa-list{display:grid;gap:14px;width:100%;max-width:760px;margin-inline:auto}
+.sa{background:#faf7ee;border:2px solid #e3dccb;border-radius:34px;overflow:hidden}
+.sa summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:700;font-size:.95rem;line-height:1.35;letter-spacing:.01em;text-transform:uppercase;color:#1b1a1a}
+.sa summary::-webkit-details-marker{display:none}
+.sa summary::after{content:"";flex:none;width:10px;height:10px;border-right:2.5px solid #2c4314;border-bottom:2.5px solid #2c4314;transform:rotate(45deg);margin:-4px 4px 0 0;transition:transform .15s}
+.sa[open] summary::after{transform:rotate(-135deg);margin:4px 4px 0 0}
+.sa summary:focus-visible{outline:3px solid #2c4314;outline-offset:-3px;border-radius:34px}
+.sa-body{padding:0 26px 24px;display:grid;gap:14px}
+.sa-body p{margin:0;font-family:"Poppins",Inter,system-ui,sans-serif;font-size:.98rem;line-height:1.65;color:#3a3a30}
+.sa-link{justify-self:start;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2c4314;text-decoration:underline;text-underline-offset:4px}
+@media(min-width:700px){.sa summary{font-size:1.05rem;padding:26px 34px}.sa-body{padding:0 34px 28px}}
