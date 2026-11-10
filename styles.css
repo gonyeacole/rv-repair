@@ -1953,3 +1953,5 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 .hwk-tr-d{display:none}
 .hwk-step{position:relative;z-index:1}
 @media(min-width:760px){.hwk-tr-m{display:none}.hwk-tr-d{display:block}}
+.hwk-grid{gap:44px 16px!important}
+@media(min-width:760px){.hwk-grid{gap:24px!important}}
