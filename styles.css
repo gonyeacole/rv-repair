@@ -1916,3 +1916,5 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{font-family:"TAY Watk
 @media(min-width:981px){.hero h1{font-size:3.4rem!important}}
 /* Watkins has very wide word gaps, so pull the words closer */
 h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!important}
+@media(max-width:700px){.hero h1{font-size:clamp(1.8rem,8.6vw,2.3rem)!important}}
+@media(min-width:981px){.hero h1{font-size:3rem!important}}
