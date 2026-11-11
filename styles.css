@@ -2166,3 +2166,7 @@ a.sa-all{text-decoration:none}
   .hd-main .burger,.burger{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;width:48px!important;height:48px!important}
   .hd-main .burger span,.burger span{background:#fff!important;width:30px!important;height:3px!important;margin:3px auto!important;border-radius:2px!important}
 }
+/* Banner: brown background */
+.pricing.pp{background:#2b1a0e!important}
+.pp-h{color:#fff!important}
+.pp-rv{filter:drop-shadow(0 18px 18px rgba(0,0,0,.45))}
