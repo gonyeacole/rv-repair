@@ -2161,3 +2161,8 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 @media(min-width:760px){.svp-list .svp-in{grid-template-columns:1fr 1fr}.svp-hero{padding-top:48px}.svp-btns{grid-auto-flow:column;justify-content:center}.svp-b{width:300px}}
 a.sa-all{text-decoration:none}
 .svp-b{gap:.4em}
+/* Phone menu button: three white lines, no background */
+@media(max-width:980px){
+  .hd-main .burger,.burger{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;width:48px!important;height:48px!important}
+  .hd-main .burger span,.burger span{background:#fff!important;width:30px!important;height:3px!important;margin:3px auto!important;border-radius:2px!important}
+}
