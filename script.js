@@ -99,24 +99,3 @@ form.addEventListener("submit", (e) => {
   btn.addEventListener("click", () => set(!nav.classList.contains("open")));
   nav.addEventListener("click", (e) => { if (e.target.closest(".menu-in a")) set(false); });
 })();
-
-
-// See all services: opens or closes every service dropdown
-(function () {
-  const btn = document.getElementById("sa-all");
-  if (!btn) return;
-  const rows = [...document.querySelectorAll("details.sa")];
-  const label = document.getElementById("sa-all-t");
-  const sync = () => {
-    const all = rows.every((d) => d.open);
-    btn.setAttribute("aria-pressed", String(all));
-    btn.classList.toggle("is-open", all);
-    label.textContent = all ? "Hide all services" : "See all services";
-  };
-  btn.addEventListener("click", () => {
-    const open = !rows.every((d) => d.open);
-    rows.forEach((d) => (d.open = open));
-    sync();
-  });
-  rows.forEach((d) => d.addEventListener("toggle", sync));
-})();
