@@ -1929,7 +1929,7 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @media(max-width:700px){.hero-copy::before{background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.72)),url("assets/hero-aerial-mobile2.jpg") 50% 0/cover no-repeat!important}}
 
 /* How it works: four round icon steps */
-.hwk{background:#f3f1e8!important;padding:56px 0 60px!important;margin:0!important}
+.hwk{background:#f7edd2!important;padding:56px 0 60px!important;margin:0!important}
 .hwk .container{width:calc(100% - 36px);max-width:900px;margin-inline:auto;display:grid;justify-items:center;text-align:center}
 .hwk-h{font-size:1.7rem!important;line-height:1.15!important;color:#2c4314!important;margin:0 0 20px!important;text-align:center!important;max-width:16ch;text-wrap:balance}
 .hwk-rule{display:block;width:100%;max-width:720px;height:3px;background:#eb5b2f;margin-bottom:44px}
@@ -1997,7 +1997,7 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .sa-link{justify-self:start;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2c4314;text-decoration:underline;text-underline-offset:4px}
 @media(min-width:700px){.sa summary{font-size:1.05rem;padding:26px 34px}.sa-body{padding:0 34px 28px}}
 /* Services: tan background, brown text */
-.svc6.sa-sec{background:#f1ede3!important}
+.svc6.sa-sec{background:#f7edd2!important}
 .sa-sec .sc-h{color:#3d2512!important}
 .sa{background:#faf7ee;border-color:#ddd2bb}
 .sa summary{color:#3d2512}
@@ -2069,7 +2069,7 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 
 /* Phone: the brown panel is as wide as the hero buttons, floats over the photo, tan behind */
 @media(max-width:700px){
-  .hero{background:#f1ede3!important;padding-bottom:36px!important}
+  .hero{background:#f7edd2!important;padding-bottom:36px!important}
   .hero .quotesec.qs-in{width:min(320px,calc(100% - 32px))!important;margin:-64px auto 0!important;padding:32px 20px 28px!important;border-radius:28px!important;background:#3d2512!important;box-shadow:0 14px 34px rgba(0,0,0,.4)}
 }
 
@@ -2083,7 +2083,7 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 
 /* Form is its own section again, between the hero and Services */
 .hero-grid{grid-template-columns:1fr!important}
-.quotesec{background:#f1ede3!important;padding:0 0 36px!important;display:flow-root}
+.quotesec{background:#f7edd2!important;padding:0 0 36px!important;display:flow-root}
 .quotesec .container{position:relative;z-index:3}
 @media(min-width:701px){
   .hero{padding-bottom:150px!important}
@@ -2135,7 +2135,7 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 .sa-all:focus-visible{outline:3px solid #3d2512;outline-offset:3px;border-radius:6px}
 
 /* Services page */
-.svp-page{background:#f1ede3;color:#3d2512}
+.svp-page{background:#f7edd2;color:#3d2512}
 .svp-in{width:calc(100% - 36px);max-width:860px;margin-inline:auto}
 .svp-hero{padding:34px 0 8px}
 .svp-back{margin:0 0 18px;font-size:.9rem}
