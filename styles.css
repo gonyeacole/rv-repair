@@ -1739,8 +1739,8 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2{font-family:Montserrat,Inter,sy
 @media(max-width:700px){.hero::after{background:linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.8))!important}}
 
 /* Hero: aerial campground photo, black tint */
-.hero{background:#000 url("assets/hero-aerial-desktop.jpg") center/cover no-repeat!important}
-.hero::after{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.7) 55%,rgba(0,0,0,.78))!important}
+.hero{background:#000 url("assets/hero-film-desktop.jpg") center/cover no-repeat!important}
+.hero::after{background:linear-gradient(rgba(0,0,0,.64),rgba(0,0,0,.54) 55%,rgba(0,0,0,.64))!important}
 @media(max-width:700px){.hero{background-image:url("assets/hero-aerial-mobile.jpg")!important;background-position:50% 50%}.hero::after{background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.72))!important}}
 
 /* Quote form on the lighter blue */
@@ -1926,7 +1926,7 @@ h1,h2,h3,h4,.title,.pp-h,.hero h1,.quote-card h2,.sl-tx h3{word-spacing:-.22em!i
 @media(min-width:981px){.hero h1{font-size:3.4rem!important;line-height:1.1!important}}
 .hero .lead{font-weight:700!important}
 /* Phone hero photo: tighter crop so RV rows reach the bottom of the photo */
-@media(max-width:700px){.hero-copy::before{background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.72)),url("assets/hero-aerial-mobile2.jpg") 50% 0/cover no-repeat!important}}
+@media(max-width:700px){.hero-copy::before{background:linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.6)),url("assets/hero-film-mobile.jpg") 50% 0/cover no-repeat!important}}
 
 /* How it works: four round icon steps */
 .hwk{background:#f7edd2!important;padding:56px 0 60px!important;margin:0!important}
