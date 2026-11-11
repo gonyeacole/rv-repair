@@ -2124,3 +2124,6 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
 @media(max-width:700px){.hero-copy{padding-top:104px!important}}
 /* Services pills white */
 .sa{background:#fff!important}
+/* Button text: normal letter spacing */
+.hb,.qc-submit,.quotesec .qc-submit,.pp-btn,a.pp-btn,.slant-btn,.btn,.hd-btn,.hd-quote{letter-spacing:.04em!important}
+@media(max-width:700px){.hb,.qc-submit,.quotesec .qc-submit,.pp-btn,a.pp-btn,.slant-btn{letter-spacing:.05em!important;font-size:1rem!important}}
