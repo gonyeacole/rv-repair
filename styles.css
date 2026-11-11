@@ -2118,3 +2118,5 @@ p,li,.lead,.qc-sub,.qc-fine,.faq details p,.seo-text p,.sc-card .sr{font-family:
   .menu,.menu.open,.menu .menu-in,.menu #menu-list,.menu-in,#menu-list,.menu .menu-toggle{background:#3d2512!important}
 }
 @media(max-width:700px){.menu,.menu.open,.menu .menu-in,.menu #menu-list,.menu-in,#menu-list{background:#4a2d16!important;top:88px!important}}
+/* Phone: form card is as wide as the Services pills */
+@media(max-width:700px){.quotesec .container{width:calc(100% - 36px)!important}}
