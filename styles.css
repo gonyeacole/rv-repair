@@ -2204,3 +2204,10 @@ a.sa-all{text-decoration:none}
   .se-big{font-size:clamp(2.4rem,4vw,3.4rem)!important}
   .se-when{min-height:2.6em;display:flex;align-items:center;justify-content:center}
 }
+/* Seasonal cards: sub header closer to the season title */
+.se-card{gap:0}
+.se-big{margin-bottom:0!important}
+.se-kind{margin:0!important}
+.se-rule{margin:14px 0 12px}
+.se-kind{margin-top:-12px!important}
+@media(min-width:900px){.se-kind{margin-top:-10px!important}}
