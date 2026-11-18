@@ -2170,3 +2170,37 @@ a.sa-all{text-decoration:none}
 .pricing.pp{background:#2b1a0e!important}
 .pp-h{color:#fff!important}
 .pp-rv{filter:drop-shadow(0 18px 18px rgba(0,0,0,.45))}
+
+/* Seasonal service: stacked plan-style cards */
+.seas{background:#fff;padding:56px 0 60px}
+.se-in{width:calc(100% - 36px);max-width:1100px;margin-inline:auto;display:grid;gap:22px;justify-items:center}
+.se-h{font-size:clamp(1.8rem,8.4vw,2.8rem)!important;line-height:1.05!important;color:#2b1a0e!important;text-align:center!important;margin:0!important;text-transform:uppercase}
+.se-lead{margin:0;max-width:34ch;text-align:center;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:500;font-size:1.05rem;line-height:1.55;color:#4f3a24}
+.se-grid{display:grid;gap:22px;width:100%;margin-top:8px}
+.se-card{border-radius:34px;padding:34px 26px 28px;display:grid;justify-items:center;text-align:center;gap:6px;border:2px solid #ddd2bb}
+.se-light{background:#f7edd2;color:#2b1a0e}
+.se-dark{background:#2b1a0e;color:#f7edd2;border-color:#2b1a0e}
+.se-big{font-size:clamp(2.6rem,13vw,3.6rem)!important;line-height:1!important;margin:0!important;color:#eb5b2f!important;text-transform:uppercase;letter-spacing:.01em}
+.se-dark .se-big{color:#f7edd2!important}
+.se-kind{margin:4px 0 0;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase}
+.se-rule{display:block;width:78%;height:4px;border-radius:2px;background:rgba(43,26,14,.18);margin:14px 0 12px}
+.se-dark .se-rule{background:rgba(247,237,210,.25)}
+.se-when{margin:0 0 10px;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.se-card ul{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:12px;text-align:left;width:100%;max-width:290px}
+.se-card li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;font-family:"Poppins",Inter,system-ui,sans-serif;font-size:1rem;line-height:1.4}
+.se-card li svg{color:#eb5b2f;margin-top:2px}
+.se-dark li svg{color:#f7edd2}
+.se-btn{display:flex;align-items:center;justify-content:center;width:100%;max-width:320px;height:58px;border-radius:999px;background:#2b1a0e;color:#f7edd2;font-family:"Poppins",Inter,system-ui,sans-serif;font-weight:700;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+.se-dark .se-btn{background:#eb5b2f;color:#2b1a0e}
+.se-btn:hover{filter:brightness(1.12)}
+.se-btn:focus-visible{outline:3px solid #eb5b2f;outline-offset:3px}
+@media(min-width:900px){.seas{padding:84px 0 92px}.se-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}.se-card{grid-template-rows:auto auto auto auto auto 1fr auto}.se-card ul{align-content:start}}
+.se-card{display:flex;flex-direction:column;align-items:center}
+.se-card ul{flex:1 0 auto;align-content:start}
+.se-btn{margin-top:auto}
+@media(min-width:900px){
+  .se-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .se-card{grid-template-rows:none}
+  .se-big{font-size:clamp(2.4rem,4vw,3.4rem)!important}
+  .se-when{min-height:2.6em;display:flex;align-items:center;justify-content:center}
+}
