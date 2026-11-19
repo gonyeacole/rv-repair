@@ -2272,3 +2272,10 @@ a.sa-all{text-decoration:none}
 .se-card .se-btn{max-width:none!important;margin-top:auto}
 @media(min-width:900px){.se-card .se-big{font-size:2rem!important}.se-card .se-when{min-height:2.6em!important}}
 @media(min-width:900px){.se-card .se-when{min-height:2.9em!important;display:flex!important;align-items:flex-start}}
+/* Seasonal cards: all text white */
+.seas .se-card,.seas .se-card .se-big,.seas .se-card .se-kind,.seas .se-card .se-when,.seas .se-card li,.seas .se-card li span{color:#fff!important}
+.seas .se-card li svg,.seas .se-light .se-bdg,.seas .se-dark .se-bdg{color:#fff!important}
+.seas .se-light .se-bdg{background:rgba(255,255,255,.22)}
+.seas .se-card .se-when{opacity:1}
+.seas .se-light .se-btn{background:#2a1511!important;color:#fff!important}
+.seas .se-dark .se-btn{background:#70b3de!important;color:#fff!important}
