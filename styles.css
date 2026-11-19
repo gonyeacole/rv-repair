@@ -2279,3 +2279,6 @@ a.sa-all{text-decoration:none}
 .seas .se-card .se-when{opacity:1}
 .seas .se-light .se-btn{background:#2a1511!important;color:#fff!important}
 .seas .se-dark .se-btn{background:#70b3de!important;color:#fff!important}
+/* Blue seasonal cards: brown text (checkmarks and badge icon stay white) */
+.seas .se-light .se-big,.seas .se-light .se-kind,.seas .se-light .se-when,.seas .se-light li span{color:#2a1511!important}
+.seas .se-light .se-btn{color:#fff!important}
