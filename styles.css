@@ -2240,3 +2240,15 @@ a.sa-all{text-decoration:none}
 .se-light .se-big,.se-light li svg{color:#2a1511!important}
 .se-light .se-rule{background:rgba(42,21,17,.25)}
 .se-light .se-when{opacity:.9}
+
+/* Less rounded: buttons and form fields 14px, the form card 22px */
+.hb,.hb-y,.hb-w,.qc-submit,.quotesec .qc-submit,.pp-btn,a.pp-btn,.slant-btn,.se-btn,.svp-b,.btn,.btn-primary,.btn-outline,.hd-btn,.hd-quote,.qc-submit:focus-visible{border-radius:14px!important}
+.quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-radius:14px!important}
+.quotesec .quote-card,.hero .quotesec.qs-in .quote-card{border-radius:22px!important}
+@media(max-width:700px){
+  .hb,.qc-submit,.quotesec .qc-submit,.pp-btn,a.pp-btn,.slant-btn,.se-btn,.svp-b{border-radius:14px!important}
+  .quotesec .quote-card input,.quotesec .quote-card select,.quotesec .quote-card textarea{border-radius:14px!important}
+  .quotesec .quote-card{border-radius:22px!important}
+}
+/* Phone menu outline only while the list is open */
+@media(max-width:700px){.menu:not(.open){border:0!important}}
