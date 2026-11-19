@@ -2235,3 +2235,8 @@ a.sa-all{text-decoration:none}
 .doc a,.doc .back a,.seo-in p a{color:#3a7099}
 /* One brown everywhere: the header brown. The phone menu list gets a thin line so it still stands out. */
 @media(max-width:700px){.menu,.menu.open{border:1px solid rgba(227,216,196,.28)!important}}
+/* Seasonal cards: the light cards are sky blue */
+.se-light{background:#70b3de;border-color:#70b3de;color:#2a1511}
+.se-light .se-big,.se-light li svg{color:#2a1511!important}
+.se-light .se-rule{background:rgba(42,21,17,.25)}
+.se-light .se-when{opacity:.9}
