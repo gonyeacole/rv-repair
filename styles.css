@@ -2252,3 +2252,9 @@ a.sa-all{text-decoration:none}
 }
 /* Phone menu outline only while the list is open */
 @media(max-width:700px){.menu:not(.open){border:0!important}}
+
+/* Hero buttons: tight letters, icon beside the words */
+.hb,.hb-y,.hb-w{letter-spacing:.01em!important;gap:10px}
+.hb svg{display:block!important;flex:none;width:22px;height:22px}
+.hb-w [data-phone-text]::before{content:none!important}
+@media(max-width:700px){.hb{letter-spacing:.01em!important;font-size:1rem}}
