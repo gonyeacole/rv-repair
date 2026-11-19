@@ -2258,3 +2258,17 @@ a.sa-all{text-decoration:none}
 .hb svg{display:block!important;flex:none;width:22px;height:22px}
 .hb-w [data-phone-text]::before{content:none!important}
 @media(max-width:700px){.hb{letter-spacing:.01em!important;font-size:1rem}}
+
+/* Seasonal cards, left-aligned with an icon badge */
+.se-card{align-items:stretch!important;text-align:left!important;padding:22px 20px 20px!important;border-radius:22px!important;gap:0!important}
+.se-hd{display:flex;gap:14px;align-items:center;margin-bottom:6px}
+.se-bdg{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;flex:none;background:rgba(42,21,17,.12);color:#2a1511}
+.se-dark .se-bdg{background:rgba(112,179,222,.2);color:#70b3de}
+.se-card .se-big{font-size:clamp(1.7rem,7.4vw,2.1rem)!important;line-height:1!important;text-align:left!important;margin:0!important}
+.se-card .se-kind{margin:5px 0 0!important;font-size:.82rem;letter-spacing:.1em;text-align:left}
+.se-rule{display:none!important}
+.se-card .se-when{min-height:0!important;display:block!important;text-align:left;margin:12px 0 12px;font-size:.74rem;letter-spacing:.12em}
+.se-card ul{max-width:none!important;width:100%;margin:0 0 18px!important}
+.se-card .se-btn{max-width:none!important;margin-top:auto}
+@media(min-width:900px){.se-card .se-big{font-size:2rem!important}.se-card .se-when{min-height:2.6em!important}}
+@media(min-width:900px){.se-card .se-when{min-height:2.9em!important;display:flex!important;align-items:flex-start}}
